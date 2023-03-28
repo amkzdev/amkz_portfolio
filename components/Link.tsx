@@ -1,11 +1,12 @@
 import React from 'react'
-import { Link, LinkProps, Typography } from '@mui/material'
+import { Typography } from '@mui/material'
+import Link from 'next/link'
 
 
-const CustomLink = ({ text, fontWeight, ...props }: LinkProps & { text?: string, fontWeight?: string | number }) => {
+const CustomLink = ({ text, fontWeight, href, ...props }: { href: string, text?: string, fontWeight?: string | number }) => {
     return (
-        <Link underline={'none'} sx={{ '& :hover': { color: 'primary.light' } }} {...props}  >
-            <Typography fontWeight={fontWeight || 500} color={'yellow.main'}>
+        <Link href={href} {...props} style={{ textDecoration: 'none' }} >
+            <Typography fontWeight={fontWeight || 500} color={'yellow.main'} sx={{ '&:hover': { color: 'primary.light' } }}>
                 {text}
             </Typography>
         </Link>
