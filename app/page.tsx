@@ -1,6 +1,6 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+// import styles from './page.module.css'
 
 
 export const metadata = {
@@ -13,8 +13,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    < >
-      <button className='bg-yellow-500 p-2' >دکمه</button>
-    </>
+    <div>
+    </div>
   )
 }
