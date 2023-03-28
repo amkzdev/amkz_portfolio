@@ -68,7 +68,7 @@ export const firstTheme = responsiveFontSizes(createTheme({
   components:{
     MuiButtonBase:{
       styleOverrides:{
-        focusVisible:'rgba(0,0,0,0.1)'
+        // focusVisible:'rgba(0,0,0,0.1)'
       }
     }
   }
