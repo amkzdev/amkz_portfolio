@@ -5,8 +5,8 @@ import { Inter } from 'next/font/google'
 
 
 export const metadata = {
-  title: 'Amir Mahdi Keshan Zare',
-  description: 'This is Amir Mahdi Keshan Zare Offical Portfolio',
+  title: 'Amir Mahdi Keshan Zare (AMKZ) Portfolio',
+  description: 'This is Amir Mahdi Keshan Zare Offical Portfolio , I Am A Professional Front End Developer , Feel Free To Get In Touch With (amkz.dev@gmail.com)',
 }
 
 
