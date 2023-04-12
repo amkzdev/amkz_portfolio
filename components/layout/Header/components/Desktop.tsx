@@ -69,7 +69,7 @@ export const Desktop = () => {
                 </Box>
             </Box>
 
-            <Box className='Injaaa' height={'70px'} sx={{ transition: 'all ease 0.2s' }} />
+            <Box height={'60px'} sx={{ transition: 'all ease 0.2s' }} />
         </>
     )
 }

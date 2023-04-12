@@ -10,7 +10,7 @@ import Image from 'next/image'
 export const Introduction = () => {
 
     return (
-        <Box sx={{ '& img': { borderRadius: '50%', width: '250px', height: '250px', borderColor: 'yellow.main', borderWidth: '2px', borderStyle: 'solid' }, display: 'flex', flexDirection: 'row', width: '100%', justifyContent: 'space-between', p: 5, background: '#020202', boxSizing: 'border-box' }}>
+        <Box sx={{ '& img': { borderRadius: '50%', width: '250px', height: '250px', borderColor: 'yellow.main', borderWidth: '2px', borderStyle: 'solid' }, display: 'flex', flexDirection: 'row', width: '100%', justifyContent: 'space-between', p: 5, background: '#161616', boxSizing: 'border-box' }}>
 
             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                 {/* <Typography color={'yellow.main'} fontSize={44} display={'inline'} sx={{ verticalAlign: 'middle' }} >Amir Mahdi Keshan Zare <Typography color={'grey.200'} display={'inline'} fontSize={20}>(Known as AMKZ)</Typography></Typography> */}
