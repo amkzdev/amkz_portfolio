@@ -34,7 +34,7 @@ export const Desktop = () => {
 
     return (
         <>
-            <Box sx={{ display: { xs: 'none', lg: 'flex' }, justifyContent: 'space-between', px: 2, py: 1.5, position: mode == 'sticky' ? 'fixed' : 'fixed', top: 0, width: '100%', maxWidth: '1440px', transition: 'all ease 0.4s', backgroundColor: '#020202', boxSizing: 'border-box', zIndex: 1000, boxShadow: mode == 'sticky' ? '0px  1px #F6E71D' : '' }} ref={headerRef}>
+            <Box sx={{ display: { xs: 'none', lg: 'flex' }, justifyContent: 'space-between', px: 2, py: 1.5, position: mode == 'sticky' ? 'fixed' : 'fixed', top: 0, width: '100%', maxWidth: '1488px', transition: 'all ease 0.4s', backgroundColor: '#020202', boxSizing: 'border-box', zIndex: 1000, boxShadow: mode == 'sticky' ? '0px  1px #F6E71D' : '' }} ref={headerRef}>
                 <Box sx={{ '& img': { width: '50px', height: '45px', mr: 1 }, display: 'flex', alignItems: "center", flex: 0.5 }}>
                     <Image alt='amkz-light-logo' src={lightLogo} />
                     <Typography fontWeight={'500'} color={'yellow.main'} fontSize={18}>Amir Mahdi Keshan Zare (AMKZ) </Typography>
