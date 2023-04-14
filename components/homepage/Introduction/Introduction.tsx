@@ -14,8 +14,8 @@ export const Introduction = () => {
 
             <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent:'center' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                    <Typography fontSize={32} color={'white'} display={'inline'}>Hi!&nbsp;I Am&nbsp;</Typography>
-                    <Typography color={'yellow.main'} fontSize={40} display={'inline'} sx={{ verticalAlign: 'middle' }} >  Amir Mahdi Keshan Zare </Typography>
+                    {/* <Typography fontSize={32} color={'white'} display={'inline'}>Hi!&nbsp;I Am&nbsp;</Typography> */}
+                    <Typography color={'yellow.main'} fontSize={40} display={'inline'} sx={{ verticalAlign: 'middle' }} gutterBottom >  Amir Mahdi Keshan Zare </Typography>
                     <Typography color={'grey.200'} display={'inline'} fontSize={20}>&nbsp;(Known as AMKZ)</Typography>
                 </Box>
                 <Typography color={'grey.300'} fontSize={32} sx={{ mb: 3 }} gutterBottom>Front End Developer</Typography>
