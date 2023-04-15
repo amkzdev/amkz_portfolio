@@ -45,8 +45,8 @@ export const Desktop = () => {
 
                 <Box component={'nav'} sx={{ display: 'flex', flexDirection: "row", justifyContent: 'space-evenly', alignItems: 'center' }}>
                     {menuItems.map((item, index) => <>
-                        {!!index && <Typography color={'yellow.main'} sx={{ mx: 2.5 }}>|</Typography>}
-                        <Link text={item.name} href={item.url} />
+                        {!!index && <Typography key={item.name} color={'yellow.main'} sx={{ mx: 2.5 }}>|</Typography>}
+                        <Link text={item.name} key={item.url} href={item.url} />
                     </>)}
                 </Box>
 
