@@ -7,9 +7,9 @@ const AppContainer = ({ children }: { children: ReactNode }) => {
     return (
         <main className='container mx-auto px-4'>
             <ThemeProvider theme={firstTheme}>
-                <Container maxWidth='xl'>
+                {/* <Container maxWidth='xl'> */}
                     {children}
-                </Container>
+                {/* </Container> */}
             </ThemeProvider>
         </main >
     )
