@@ -1,5 +1,5 @@
 
-import { HeroSection, Introduction } from '@components/homepage'
+import { HeroSection, Introduction, WorkExperience } from '@components/homepage'
 import { Inter } from 'next/font/google'
 // import styles from './page.module.css'
 
@@ -17,6 +17,7 @@ export default function Home() {
     <div>
       {/* <HeroSection /> */}
       <Introduction />
+      <WorkExperience/>
 
     </div>
   )
