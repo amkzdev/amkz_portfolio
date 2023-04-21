@@ -7,5 +7,7 @@ export interface WorkExperinceType {
     duration: string,
     industry: string,
     companyOverview: string[],
-    acheivements: string[]
+    acheivements: string[],
+    challanges?: string[],
+    responsiblities?: string[]
 }
