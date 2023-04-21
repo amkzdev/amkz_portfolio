@@ -44,10 +44,10 @@ export const Desktop = () => {
                 </NextLink>
 
                 <Box component={'nav'} sx={{ display: 'flex', flexDirection: "row", justifyContent: 'space-evenly', alignItems: 'center' }}>
-                    {menuItems.map((item, index) => <>
-                        {!!index && <Typography key={item.name} color={'yellow.main'} sx={{ mx: 2.5 }}>|</Typography>}
-                        <Link text={item.name} key={item.url} href={item.url} />
-                    </>)}
+                    {menuItems.map((item, index) => <Box key={item.url} sx={{display:'flex',alignItems:'center'}}>
+                        {!!index && <Typography color={'yellow.main'} sx={{ mx: 2.5 }}>|</Typography>}
+                        <Link text={item.name}  href={item.url} />
+                    </Box>)}
                 </Box>
 
                 <Box sx={{ display: 'flex', flexDirection: "row", justifyContent: 'flex-end', alignItems: 'center' , flexBasis:'20%' }}>
