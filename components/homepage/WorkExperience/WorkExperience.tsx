@@ -8,6 +8,7 @@ export const WorkExperience = () => {
             <span className='text-white  text-2xl text-gray-300'>Work Experience</span>
 
             <ExperienceItem  />
+            <ExperienceItem  />
         </div>
     )
 }
