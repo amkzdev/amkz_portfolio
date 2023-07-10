@@ -12,6 +12,7 @@
     "@emotion/react": "^11.10.6",
     "@emotion/server": "^11.10.0",
     "@emotion/styled": "^11.10.6",
+    "@heroicons/react": "^2.0.18",
     "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.11.14",
     "@types/node": "18.15.10",
