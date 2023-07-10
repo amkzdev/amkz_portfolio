@@ -1,5 +1,5 @@
 
-import { HeroSection, Introduction, WorkExperience } from '@components/homepage'
+import { Cover } from '@components/homepage'
 
 
 export const metadata = {
@@ -10,9 +10,12 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div>
+    <div className='px-6'>
+
+      <Cover />
       {/* <HeroSection /> */}
       {/* <Introduction />
+      
 
       <Introduction />
       <Introduction />

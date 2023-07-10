@@ -11,7 +11,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='bg-frame-black'>
-      <body className={'bg-content-black m-0 p-0 container max-w-[1366px] mx-auto text-[12px] lg:text-[14px] '.concat(Montserrat.className)}>
+      <body className={'bg-content-black m-0 p-0 container max-w-[1366px] mx-auto text-[12px] lg:text-[14px] mt-[40px]  lg:mt-[60px] '.concat(Montserrat.className)}>
         <Header />
         {children}
       </body>
