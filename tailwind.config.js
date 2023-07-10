@@ -14,7 +14,11 @@ module.exports = {
     },
     extend: {
       colors: {
-        'amkz-yellow': '#F6E71D',
+        'yellow-primary': '#F8E620',
+        'content-black':'#1C1E1F',
+        'frame-black':'#28272A',
+        'primary-blue':'#035BBC'
+
       }
 
     }

@@ -5,7 +5,7 @@ import { Desktop } from './components/Desktop'
 
 export const Header = () => {
     return (
-        <header>
+        <header className='relative'>
             <Desktop />
             {/* <Resposive /> */}
         </header>

@@ -9,12 +9,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className='bg-zinc-900 m-0 p-0'>
-        <Container>
+    <html lang="en" className='bg-frame-black'>
+      <body className='bg-content-black m-0 p-0 container max-w-[1366px] mx-auto text-[12px] lg:text-[14px]'>
           <Header />
           {children}
-        </Container>
       </body>
     </html>
   )

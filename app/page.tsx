@@ -17,7 +17,10 @@ export default function Home() {
     <div>
       {/* <HeroSection /> */}
       <Introduction />
-      <WorkExperience/>
+      <Introduction />
+      <Introduction />
+      <Introduction />
+      {/* <WorkExperience/> */}
 
     </div>
   )
