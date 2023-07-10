@@ -34,7 +34,7 @@ export const Desktop = () => {
     useEffect(() => isSticky(), [])
 
 
-    return <div className='flex p-2 px-4 flex-row items-center  justify-between border-b top-0 transition-all border-yellow-primary duration-300 fixed w-full max-w-[1366px] bg-content-black z-40 ' >
+    return <div className={'flex p-2 px-4 flex-row items-center  justify-between  top-0 transition-all  duration-300 fixed w-full max-w-[1366px] bg-content-black z-40 '.concat(mode=='sticky' ? 'border-yellow-primary border-b' : 'border-none')} >
         <div className='flex flex-row items-center gap-2 text-yellow-primary'>
             <div className='w-[35px] lg:w-[45px] aspect-square relative'>
                 <Image alt='Amir Mahdi Keshan Zare Logo' src={lightLogo} fill />

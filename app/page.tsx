@@ -1,7 +1,5 @@
 
 import { HeroSection, Introduction, WorkExperience } from '@components/homepage'
-import { Inter } from 'next/font/google'
-// import styles from './page.module.css'
 
 
 export const metadata = {
@@ -10,13 +8,12 @@ export const metadata = {
 }
 
 
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
   return (
     <div>
       {/* <HeroSection /> */}
       <Introduction />
+
       <Introduction />
       <Introduction />
       <Introduction />
