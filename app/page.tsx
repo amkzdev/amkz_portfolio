@@ -1,5 +1,5 @@
 
-import { Cover } from '@components/homepage'
+import { Cover, TechnicalSkills } from '@components/homepage'
 
 
 export const metadata = {
@@ -10,9 +10,10 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className='px-6'>
+    <div className='px-6 flex flex-col gap-8 py-8'>
 
       <Cover />
+      <TechnicalSkills/>
       {/* <HeroSection /> */}
       {/* <Introduction />
       

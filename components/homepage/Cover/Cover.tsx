@@ -16,7 +16,7 @@ const SocialMedia = ({ link, icon, title }: { link: string, icon: typeof github,
 
 export const Cover = () => {
     return (
-        <div className='flex lg:flex-row flex-col justify-between items-center py-8 gap-4'>
+        <div className='flex lg:flex-row flex-col justify-between items-center  gap-4'>
 
             <div className='flex flex-col justify-between gap-4 lg:gap-6 order-2 lg:order-1'>
 
