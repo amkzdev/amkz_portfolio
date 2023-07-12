@@ -1,5 +1,5 @@
 
-import { Cover, TechnicalSkills } from '@components/homepage'
+import { Cover, Projects, TechnicalSkills } from '@components/homepage'
 
 
 export const metadata = {
@@ -14,15 +14,7 @@ export default function Home() {
 
       <Cover />
       <TechnicalSkills/>
-      {/* <HeroSection /> */}
-      {/* <Introduction />
-      
-
-      <Introduction />
-      <Introduction />
-      <Introduction /> */}
-      {/* <WorkExperience/> */}
-
+      <Projects/>
     </div>
   )
 }

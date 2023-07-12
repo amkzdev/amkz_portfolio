@@ -11,9 +11,9 @@ import mui from '@assets/images/techs/mui.png'
 
 export const TechnicalSkills = () => {
   return (
-    <div className='flex flex-col items-center gap-4'>
+    <div className='flex flex-col items-center gap-4 '>
         <SectionHeader title='Technical Skills' />
-        <div className='flex flex-row gap-4 justify-evenly items-center flex-wrap w-full'>
+        <div className='flex flex-row gap-4 justify-evenly items-center flex-wrap w-full p-4'>
 
             <SkillItem image={react} title='React JS' />
             <SkillItem image={next} title='Next JS' />
