@@ -2,6 +2,7 @@
 import { Container, Header } from '@components/layout'
 import './globals.css'
 import { Montserrat } from './fonts'
+import 'swiper/css';
 
 
 export default function RootLayout({
