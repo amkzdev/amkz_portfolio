@@ -9,7 +9,7 @@ export const Projects = () => {
 
             <SectionHeader title='Featured Projects' />
 
-            <div className='flex flex-col gap-4 w-full'>
+            <div className='flex flex-col gap-4 lg:gap-6 [&>*:first-child]:border-none [&>*]:border-t lg:[&>*:not(:first-child)]:pt-6 [&>*:not(:first-child)]:pt-4  [&>*]:border-gray-600  w-full'>
 
                 {projects.map(project => <SingleProject {...project} />)}
 
