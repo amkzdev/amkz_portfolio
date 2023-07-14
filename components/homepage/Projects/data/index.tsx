@@ -48,7 +48,7 @@ import sectorMobile6 from 'assets/images/projects/Sector/m6.png'
 
 //Sampab
 
-import sampabLogo from '@assets/images/projects/sampab/logo.png'
+import sampabLogo from '@assets/images/projects/Sampab/logo.png'
 
 
 import sampabAddUserDesktop from 'assets/images/projects/Sampab/add-user-desktop.png'
