@@ -46,6 +46,29 @@ import sectorMobile5 from 'assets/images/projects/Sector/m5.png'
 import sectorMobile6 from 'assets/images/projects/Sector/m6.png'
 
 
+//Sampab
+
+import sampabLogo from '@assets/images/projects/sampab/logo.png'
+
+
+import sampabAddUserDesktop from 'assets/images/projects/Sampab/add-user-desktop.png'
+import sampabChecklistDesktop from 'assets/images/projects/Sampab/checklist-desktop.png'
+import sampabIntervention from 'assets/images/projects/Sampab/intervention-desktop.png'
+import sampabLocationDesktop from 'assets/images/projects/Sampab/location-desktop.png'
+import sampabLoginDesktop from 'assets/images/projects/Sampab/login-desktop.png'
+import sampabMapDesktop from 'assets/images/projects/Sampab/map-desktop.png'
+import sampabMapOpen from 'assets/images/projects/Sampab/map-open-desktop.png'
+import sampabReportDetailDesktop from 'assets/images/projects/Sampab/report-detail-desktop-1.png'
+import sampabReportSelectDesktop from 'assets/images/projects/Sampab/select-desktop.png'
+import sampabSearchReport from 'assets/images/projects/Sampab/searchReport-mobile.png'
+
+
+import sampabMapMobile from 'assets/images/projects/Sampab/map-mobile.png'
+import sampabMenuResponsive from 'assets/images/projects/Sampab/menu-responsive.png'
+import sampabReportDetailMobile from 'assets/images/projects/Sampab/report-detail-mobile.png'
+import sampabReportLocationMobile from 'assets/images/projects/Sampab/report-loc-mobile.png'
+
+
 
 
 
@@ -129,5 +152,47 @@ export const projects: ProjectType[] = [
             { description: 'sector-mobile-shot-5', img: sectorMobile5 },
             { description: 'sector-mobile-shot-6', img: sectorMobile6 },
         ]
+    }
+    , {
+        name: 'Sampab',
+        date: '2022-2023',
+        industry: 'Healthcare and Social Assistance',
+        logo: sampabLogo,
+        stack: 'Front End',
+        techs: [
+            { name: 'React', image: react },
+            { name: 'React Query', image: reactQuery },
+            { name: 'Typescript', image: ts },
+            { name: 'Material UI', image: mui },
+
+        ],
+        description: [
+            'Developed and maintained a React app for monitoring and controlling health centers across a country.',
+            'Implemented complex data visualization features to help clients make informed decisions .',
+            'Collaborated with a team of developers, and clients to ensure seamless integration of front-end and back-end systems'
+        ],
+        desktopShots:[
+            { description: 'sampab-desktop-shot-1', img: sampabLoginDesktop },
+            { description: 'sampab-desktop-shot-2', img: sampabMapDesktop },
+            { description: 'sampab-desktop-shot-9', img:sampabMapOpen },
+            { description: 'sampab-desktop-shot-3', img: sampabReportDetailDesktop },
+            { description: 'sampab-desktop-shot-4', img: sampabLocationDesktop },
+            { description: 'sampab-desktop-shot-5', img: sampabIntervention },
+            { description: 'sampab-desktop-shot-6', img: sampabChecklistDesktop },
+            { description: 'sampab-desktop-shot-7', img: sampabAddUserDesktop },
+            { description: 'sampab-desktop-shot-8', img: sampabIntervention },
+            { description: 'sampab-desktop-shot-9', img: sampabReportSelectDesktop },
+        ],
+        mobileShots:[
+            { description: 'sampab-mobile-shot-1', img: sampabMapMobile },
+            { description: 'sampab-mobile-shot-4', img: sampabReportLocationMobile },
+            { description: 'sampab-desktop-shot-10', img: sampabSearchReport },
+            { description: 'sampab-mobile-shot-3', img: sampabReportDetailMobile },
+            { description: 'sampab-mobile-shot-2', img: sampabMenuResponsive },
+            // { description: 'sampab-mobile-shot-5', img: sectorMobile5 },
+            // { description: 'sampab-mobile-shot-6', img: sectorMobile6 },
+
+        ],
+        link:'https://sampab.zums.ac.ir/',
     }
 ]

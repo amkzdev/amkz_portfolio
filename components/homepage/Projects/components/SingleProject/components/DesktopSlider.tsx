@@ -22,7 +22,7 @@ export const DesktopSlider = ({ items }: { items: ProjectType['desktopShots'] })
             className='h-full'
 
         >
-            {items?.map(item => <SwiperSlide key={item.img.src} className='bg-gray-100 rounded'>
+            {items?.map(item => <SwiperSlide key={item.img.src} className='bg-gray-200 rounded'>
                 <div className='w-full h-full'>
                     <Image src={item.img} fill alt={item.description} className='rounded object-scale-down lg:object-contain' />
                 </div>

@@ -14,7 +14,7 @@ export const MobileSlider = ({ items }: { items: ProjectType['desktopShots'] }) 
 
             className='h-full'
         >
-            {items?.map(item => <SwiperSlide key={item.img.src} className='bg-gray-100 rounded'>
+            {items?.map(item => <SwiperSlide key={item.img.src} className='bg-gray-200 rounded'>
                 <div className='w-full h-fit'>
                     <Image src={item.img.src} fill alt={item.description} fetchPriority='high' className='rounded object-contain' />
                 </div>
