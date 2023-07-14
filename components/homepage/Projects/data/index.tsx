@@ -69,6 +69,11 @@ import sampabReportDetailMobile from 'assets/images/projects/Sampab/report-detai
 import sampabReportLocationMobile from 'assets/images/projects/Sampab/report-loc-mobile.png'
 
 
+//ShopBay
+
+import shopbayLogo from 'assets/images/shopbay/logo.png'
+
+
 
 
 
@@ -195,4 +200,17 @@ export const projects: ProjectType[] = [
         ],
         link:'https://sampab.zums.ac.ir/',
     }
+    // {
+    //     name:'ShopBay',
+    //     logo:shopbayLogo,
+    //     date:'2022',
+    //     industry:'Online Shop',
+    //     stack:'Front End',
+    //     techs:[
+    //         { name: 'Next 12', image: next },
+    //         { name: 'React', image: react },
+    //         { name: 'JavaScript', image: js },
+    //         { name: 'Tailwind', image: tailwind },
+    //     ]
+    // }
 ]
