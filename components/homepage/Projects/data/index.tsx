@@ -20,6 +20,8 @@ import ts from '@assets/images/techs/ts.png'
 import js from '@assets/images/techs/js.png'
 import tailwind from '@assets/images/techs/tailwind.png'
 import mui from '@assets/images/techs/mui.png'
+import reactQuery from '@assets/images/techs/reactquery.png'
+import redux from '@assets/images/techs/redux.png'
 
 
 //Sector 
@@ -58,6 +60,7 @@ export const projects: ProjectType[] = [
         techs: [
             { name: 'Next 13', image: next },
             { name: 'React', image: react },
+            { name: 'React Query', image: reactQuery },
             { name: 'Typescript', image: ts },
             { name: 'JavaScript', image: js },
             { name: 'Tailwind', image: tailwind },
@@ -94,6 +97,7 @@ export const projects: ProjectType[] = [
             { name: 'React', image: react },
             { name: 'JavaScript', image: js },
             { name: 'Material UI', image: mui },
+            { name: 'Redux', image: redux },
         ],
         description: [
             'Developed a React app for an interactive learning platform used by thousands of students',
@@ -104,8 +108,8 @@ export const projects: ProjectType[] = [
             'Participated in code reviews and provided feedback to improve overall code quality',
         ]
         ,
-        link:'https://sector.soorinsec.ir/',
-        desktopShots:[
+        link: 'https://sector.soorinsec.ir/',
+        desktopShots: [
             { description: 'sector-desktop-shot-1', img: sectorDesktop1 },
             { description: 'sector-desktop-shot-2', img: sectorDesktop2 },
             { description: 'sector-desktop-shot-3', img: sectorDesktop3 },
@@ -117,7 +121,7 @@ export const projects: ProjectType[] = [
             { description: 'sector-desktop-shot-9', img: sectorDesktop9 },
             { description: 'sector-desktop-shot-10', img: sectorDesktop10 },
         ],
-        mobileShots:[
+        mobileShots: [
             { description: 'sector-mobile-shot-1', img: sectorMobile1 },
             { description: 'sector-mobile-shot-2', img: sectorMobile2 },
             { description: 'sector-mobile-shot-3', img: sectorMobile3 },
