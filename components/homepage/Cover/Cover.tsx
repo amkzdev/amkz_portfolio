@@ -4,7 +4,7 @@ import telegram from 'assets/images/telegram.png'
 import whatsapp from 'assets/images/whatsapp.webp'
 import gmail from 'assets/images/gmail.png'
 import github from 'assets/images/github.svg'
-import selfie from 'assets/images/IMG_7800.jpg'
+import selfie from 'assets/images/selfie/IMG_3551-min.jpg'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -36,7 +36,7 @@ export const Cover = () => {
                 </div>
 
                 <p className='text-gray-400 text-sm leading-6 text-center lg:text-left'>
-                    Experienced Frontend Developer with a demonstrated history of working in the information technology and services industry. Skilled in React, Next, HTML, JavaScript, TypeScript, CSS, SASS, LESS, and JQuery.
+                    Experienced FullStack Developer with a demonstrated history of working in the information technology and services industry. Skilled in React, Next , Node Js , Nest Js, HTML, JavaScript, TypeScript, CSS, SASS, LESS, and JQuery.
                     I have an eye on design and make creative user interfaces.
                 </p>
 
@@ -58,7 +58,7 @@ export const Cover = () => {
             </div>
             <div className='lg:w-[200px] w-[180px] aspect-square relative rounded-lg overflow-hidden shrink-0 order-1 lg:order-2'>
 
-                <Image src={selfie} alt='amir-mahdi-keshan-zare (amkz)' fill />
+                <Image src={selfie}  alt='amir-mahdi-keshan-zare (amkz)' className='object-cover' fill />
             </div>
 
         </div>
