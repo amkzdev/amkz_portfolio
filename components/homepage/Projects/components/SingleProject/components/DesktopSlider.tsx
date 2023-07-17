@@ -6,17 +6,17 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 
-export const DesktopSlider = ({ items }: { items: ProjectType['desktopShots'] }) => {
+export const DesktopSlider = ({ items, fullWidth }: { items: ProjectType['desktopShots'], fullWidth: boolean }) => {
     return (
         <Swiper
             breakpoints={{
                 300: {
-                    spaceBetween:10,
-                    slidesPerView:1
-                } ,
-                1080:{
-                    spaceBetween:10,
-                    slidesPerView:2
+                    spaceBetween: 10,
+                    slidesPerView: 1
+                },
+                1080: {
+                    spaceBetween: 10,
+                    slidesPerView: fullWidth ? 3 : 2
                 }
             }}
             className='h-full'

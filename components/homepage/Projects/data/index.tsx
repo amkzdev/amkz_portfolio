@@ -73,6 +73,16 @@ import sampabReportLocationMobile from 'assets/images/projects/Sampab/report-loc
 
 import shopbayLogo from 'assets/images/shopbay/logo.png'
 
+import botLogo from 'assets/images/bot/logo.jpg'
+import botlogin from 'assets/images/bot/login.png'
+import botSendOrder1 from 'assets/images/bot/send-order-1.png'
+import botSendOrder2 from 'assets/images/bot/send-order-2.png'
+import botSendOrder3 from 'assets/images/bot/send-order-3.png'
+import botCondition from 'assets/images/bot/condition.png'
+import botConditionTable from 'assets/images/bot/condition-table.png'
+import botDashboard from 'assets/images/bot/dashboard.png'
+import botOption from 'assets/images/bot/option.png'
+
 
 
 
@@ -176,10 +186,10 @@ export const projects: ProjectType[] = [
             'Implemented complex data visualization features to help clients make informed decisions .',
             'Collaborated with a team of developers, and clients to ensure seamless integration of front-end and back-end systems'
         ],
-        desktopShots:[
+        desktopShots: [
             { description: 'sampab-desktop-shot-1', img: sampabLoginDesktop },
             { description: 'sampab-desktop-shot-2', img: sampabMapDesktop },
-            { description: 'sampab-desktop-shot-9', img:sampabMapOpen },
+            { description: 'sampab-desktop-shot-9', img: sampabMapOpen },
             { description: 'sampab-desktop-shot-3', img: sampabReportDetailDesktop },
             { description: 'sampab-desktop-shot-4', img: sampabLocationDesktop },
             { description: 'sampab-desktop-shot-5', img: sampabIntervention },
@@ -188,7 +198,7 @@ export const projects: ProjectType[] = [
             { description: 'sampab-desktop-shot-8', img: sampabIntervention },
             { description: 'sampab-desktop-shot-9', img: sampabReportSelectDesktop },
         ],
-        mobileShots:[
+        mobileShots: [
             { description: 'sampab-mobile-shot-1', img: sampabMapMobile },
             { description: 'sampab-mobile-shot-4', img: sampabReportLocationMobile },
             { description: 'sampab-desktop-shot-10', img: sampabSearchReport },
@@ -198,7 +208,39 @@ export const projects: ProjectType[] = [
             // { description: 'sampab-mobile-shot-6', img: sectorMobile6 },
 
         ],
-        link:'https://sampab.zums.ac.ir/',
+        link: 'https://sampab.zums.ac.ir/',
+    }
+    ,
+    {
+        name: 'Batch Online Trading',
+        date: '2021-2023',
+        industry: 'Stock & Financial Services',
+        logo: botLogo,
+        stack: 'Front End',
+        techs: [
+            { name: 'React', image: react },
+            { name: 'JavaScript', image: js },
+            { name: 'Typescript', image: ts },
+
+        ],
+        description: [
+            'Developed a React app for a SaaS trading application used by over 40 brokers in stock.',
+            'Created an exclusive set of components to enhance the functionality and design of the application ',
+            'Utilized the OKR method to set and achieve project goals ',
+            'Collaborated with back-end developers to integrate front-end and back-end systems ',
+            'Utilized modern front-end technologies and frameworks to enhance the applications capabilities'
+        ],
+        desktopShots:[
+            { description: 'bot-desktop-shot-1', img: botDashboard },
+            { description: 'bot-desktop-shot-2', img: botSendOrder1 },
+            { description: 'bot-desktop-shot-3', img: botSendOrder2 },
+            { description: 'bot-desktop-shot-4', img: botSendOrder3 },
+            { description: 'bot-desktop-shot-5', img: botConditionTable },
+            { description: 'bot-desktop-shot-6', img: botCondition },
+            { description: 'bot-desktop-shot-7', img: botOption },
+            { description: 'bot-desktop-shot-8', img: botlogin },
+            // { description: 'bot-desktop-shot-9', img: sampabReportSelectDesktop },
+        ]
     }
     // {
     //     name:'ShopBay',

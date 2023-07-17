@@ -14,7 +14,7 @@ export const SingleProject = ({ logo, name, date, industry, stack, techs, descri
                 <div className='flex flex-row gap-4'>
 
                     <div className='w-[90px] lg:w-[120px] aspect-square relative box-border rounded overflow-hidden'>
-                        <Image src={logo.src} fill alt={name}  className='object-contain p-2 rounded-lg ' style={{borderRadius:'8px'}} />
+                        <Image src={logo.src} fill alt={name} className='object-contain p-2 rounded-lg ' style={{ borderRadius: '8px' }} />
                     </div>
 
                     <div className='flex flex-col justify-between text-gray-300'>
@@ -69,17 +69,17 @@ export const SingleProject = ({ logo, name, date, industry, stack, techs, descri
 
             <div className='flex flex-col w-full gap-4 '>
 
-                <span className='text-gray-300 '>Screenshots:</span>
+                <span className='text-gray-300 '>Sample Screenshots:</span>
 
                 <div className='grid grid-cols-3 gap-4 w-full  '>
 
-                    <div className='col-span-3 lg:col-span-2   h-[200px]'>
-                        <DesktopSlider items={desktopShots} />
+                    <div className={`col-span-3 h-[200px] ${!mobileShots ? '' : 'lg:col-span-2 '}`}>
+                        <DesktopSlider items={desktopShots} fullWidth={!mobileShots} />
                     </div>
 
-                    <div className='col-span-3 lg:col-span-1  lg:h-[200px] h-[300px]'>
+                    {!!mobileShots && <div className='col-span-3 lg:col-span-1  lg:h-[200px] h-[300px]'>
                         <MobileSlider items={mobileShots} />
-                    </div>
+                    </div>}
 
                 </div>
 
