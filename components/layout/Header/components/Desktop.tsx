@@ -6,6 +6,7 @@ import NextLink from 'next/link'
 import { PhoneIcon } from '@heroicons/react/24/solid'
 import { HamMenu } from './HamMenu'
 import { menuItems } from '../data'
+import { ContactMeButton } from '@/components/common'
 
 
 export const Desktop = () => {
@@ -41,7 +42,7 @@ export const Desktop = () => {
         <div className='hidden lg:flex flex-row items-center justify-center gap-4 flex-1'>
             {menuItems.map((item, index) => <NextLink key={item.url} href={item.url} className='text-yellow-primary hover:text-primary-blue'>{item.name}</NextLink>)}
         </div>
-        <HamMenu/>
+        <HamMenu />
         {/* <button className='lg:hidden flex cursor-pointer'>
             <Bars3Icon className='w-8 h-8 text-yellow-primary' />
 
@@ -49,10 +50,12 @@ export const Desktop = () => {
         <div className='flex-1 flex flex-row justify-end fixed lg:static  left-1/2  bottom-4 -translate-x-1/2 lg:translate-x-0  lg:left-0'>
 
 
-        <button className='bg-yellow-primary p-2 flex  flex-row  font-semibold rounded px-8 items-center gap-2'>
+            <ContactMeButton />
+
+            {/* <button className='bg-yellow-primary p-2 flex  flex-row  font-semibold rounded px-8 items-center gap-2'>
             <span>Contact Me</span>
             <PhoneIcon className='w-4 h-4'/>
-        </button>
+        </button> */}
         </div>
 
     </div>
