@@ -15,7 +15,7 @@ export const TechnicalSkills = () => {
   return (
     <div className='flex flex-col items-center gap-4 '>
         <SectionHeader title='Technical Skills' />
-        <div className='flex flex-row gap-4 justify-evenly items-center flex-wrap w-full p-4'>
+        <div className='flex flex-row gap-4 justify-evenly items-center flex-wrap w-full p-4' id='skills'>
 
             <SkillItem image={react} title='React JS' />
             <SkillItem image={next} title='Next JS' />
