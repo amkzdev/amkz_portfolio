@@ -13,8 +13,8 @@ export const SingleProject = ({ logo, name, date, industry, stack, techs, descri
 
                 <div className='flex flex-row gap-4'>
 
-                    <div className='w-[90px] lg:w-[120px] aspect-square relative box-border rounded overflow-hidden'>
-                        <Image src={logo.src} fill alt={name} className='object-contain p-2 rounded-lg ' style={{ borderRadius: '8px' }} />
+                    <div className='w-[90px] lg:w-[120px] p-2 aspect-square relative box-border rounded overflow-hidden'>
+                        <Image src={logo.src} fill alt={name} className='object-contain  rounded-lg ' style={{ borderRadius: '8px' }} />
                     </div>
 
                     <div className='flex flex-col justify-between text-gray-300'>
