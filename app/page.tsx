@@ -1,5 +1,5 @@
 
-import { Cover, Projects, TechnicalSkills, WorkExperience } from '@components/homepage'
+import { Cover, Education, Projects, TechnicalSkills, WorkExperience } from '@components/homepage'
 import { Metadata } from 'next'
 import selfie from 'assets/logos/logoCircle.png'
 
@@ -38,6 +38,7 @@ export default function Home() {
       <TechnicalSkills />
       <Projects />
       <WorkExperience/>
+      <Education/>
     </div>
   )
 }
