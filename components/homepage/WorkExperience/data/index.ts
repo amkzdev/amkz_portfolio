@@ -11,8 +11,8 @@ export const workExperiences: WorkExperinceType[] = [
         date: 'Aug 2022 - Now',
         industry: 'Web Developement',
         logo: logo,
-        name: 'Freelance Fullstack Developer',
-        stack: 'Full Stack',
+        name: 'Freelance Front End Developer',
+        stack: 'Front End',
         description: [
             'Develop Many Projects Around The World '
             , 'Corporate With Top Companies'
