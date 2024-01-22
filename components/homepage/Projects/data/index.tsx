@@ -90,6 +90,10 @@ import desk2 from 'assets/images/projects/Mozaydo/d2.png'
 import desk3 from 'assets/images/projects/Mozaydo/d3.png'
 import desk4 from 'assets/images/projects/Mozaydo/d4.png'
 
+import m1 from 'assets/images/projects/Mozaydo/m1.jpeg'
+import m2 from 'assets/images/projects/Mozaydo/m2.jpeg'
+import m3 from 'assets/images/projects/Mozaydo/m3.jpeg'
+
 
 
 export const projects: ProjectType[] = [
@@ -97,7 +101,7 @@ export const projects: ProjectType[] = [
 
     {
         date: '2023',
-        industry: 'Car Services',
+        industry: 'Car Auction Services',
         logo: mozaydoLogo,
         name: 'Mozaydo',
         stack: 'Front End',
@@ -117,13 +121,19 @@ export const projects: ProjectType[] = [
             { description: 'Mozaydo-desktop-shot-3', img: desk3 },
             { description: 'Mozaydo-desktop-shot-4', img: desk4 },
         ],
+        mobileShots:[
+            { description: 'Mozaydo-mobile-shot-1', img: m1 },
+            { description: 'Mozaydo-mobile-shot-2', img: m2 },
+            { description: 'Mozaydo-mobile-shot-3', img: m3 },  
+        ]
+        ,
 
         description: [
             'Intuitive search functionality to easily find specific car models or brands',
             'Dynamic filtering options to narrow down search results based on price , state , year and more',
             'Detailed car listings with high-quality images, specifications, and auction details',
             'User authentication and account management for bidding and selling cars',
-            'Sufficient User Experience ',
+            'Sufficient User Experience for More User Intraction',
         ],
     }
     ,
@@ -142,10 +152,11 @@ export const projects: ProjectType[] = [
             { name: 'Tailwind', image: tailwind },
         ],
         description: [
+            'Implemented Real Time Chat System With Web Socket',
             'Developed front-end projects in the e-commerce marketplace domain',
-            'Implemented a responsive website using Next.js 13.4',
             'Created a seamless user experience across different devices and screen sizes',
             'Ensured easy navigation and interaction for users on desktop, tablet, and mobile devices',
+            'Implemented a responsive website using Next.js 13.4',
             'Handled a large number of users simultaneously'
         ],
         desktopShots: [
