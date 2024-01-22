@@ -4,7 +4,7 @@ import telegram from 'assets/images/telegram.png'
 import whatsapp from 'assets/images/whatsapp.webp'
 import gmail from 'assets/images/gmail.png'
 import github from 'assets/images/github.svg'
-import selfie from 'assets/images/selfie/IMG_3551-min.jpg'
+import selfie from 'assets/images/selfie/new.jpg'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -30,13 +30,13 @@ export const Cover = () => {
                         <i className='text-sm lg:text-lg text-gray-400 '>(AMKZ)</i>
                     </div>
 
-                    <span className='text-gray-200 text-lg lg:text-2xl text-center lg:text-left font-semibold'>Full Stack Web Developer</span>
+                    <span className='text-gray-200 text-lg lg:text-2xl text-center lg:text-left font-semibold'>Front End Developer</span>
 
 
                 </div>
 
                 <p className='text-gray-400 text-sm leading-6 text-center lg:text-left'>
-                    Experienced FullStack Developer with a demonstrated history of working in the information technology and services industry. Skilled in React, Next , Node Js , Nest Js, HTML, JavaScript, TypeScript, CSS, SASS, LESS, and JQuery.
+                    Experienced Front End Developer with a demonstrated history of working in the information technology and services industry. Skilled in React, Next , Tailwindcss , Material UI , HTML, JavaScript, TypeScript, CSS, SASS, LESS, and JQuery.
                     I have an eye on design and make creative user interfaces.
                 </p>
 
