@@ -8,8 +8,8 @@ import ts from '@assets/images/techs/ts.png'
 import js from '@assets/images/techs/js.png'
 import tailwind from '@assets/images/techs/tailwind.png'
 import mui from '@assets/images/techs/mui.png'
-import nodejs from '@assets/images/techs/node.png'
-import nestjs from '@assets/images/techs/nest.svg'
+import node from '@assets/images/techs/node.png'
+import rq from '@assets/images/techs/reactquery.png'
 
 export const TechnicalSkills = () => {
   return (
@@ -21,10 +21,11 @@ export const TechnicalSkills = () => {
             <SkillItem image={next} title='Next JS' />
             <SkillItem image={ts} title='Typescript' />
             <SkillItem image={js} title='JavaScript' />
-            <SkillItem image={tailwind} title='Tailwind' />
+            <SkillItem image={rq} title='React Query' />
+            <SkillItem image={tailwind} title='Tailwindcss' />
             <SkillItem image={mui} title='Material UI' />
-            <SkillItem image={nodejs} title='Node JS' />
-            <SkillItem image={nestjs} title='Nest JS' />
+            <SkillItem image={node} title='Node JS (Intro)' />
+            {/* <SkillItem image={nestjs} title='Nest JS' /> */}
 
         </div>
 

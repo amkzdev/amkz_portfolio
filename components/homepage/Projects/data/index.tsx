@@ -100,7 +100,7 @@ export const projects: ProjectType[] = [
 
 
     {
-        date: '2023',
+        date: '2023 - 2024',
         industry: 'Car Auction Services',
         logo: mozaydoLogo,
         name: 'Mozaydo',
