@@ -84,11 +84,49 @@ import botDashboard from 'assets/images/bot/dashboard.png'
 import botOption from 'assets/images/bot/option.png'
 
 
-
+import mozaydoLogo from 'assets/images/projects/Mozaydo/logo.jpg'
+import desk1 from 'assets/images/projects/Mozaydo/d1.png'
+import desk2 from 'assets/images/projects/Mozaydo/d2.png'
+import desk3 from 'assets/images/projects/Mozaydo/d3.png'
+import desk4 from 'assets/images/projects/Mozaydo/d4.png'
 
 
 
 export const projects: ProjectType[] = [
+
+
+    {
+        date: '2023',
+        industry: 'Car Services',
+        logo: mozaydoLogo,
+        name: 'Mozaydo',
+        stack: 'Front End',
+        techs: [
+            { name: 'Next 13', image: next },
+            { name: 'React', image: react },
+            { name: 'React Query', image: reactQuery },
+            { name: 'Typescript', image: ts },
+            { name: 'JavaScript', image: js },
+            { name: 'Tailwind', image: tailwind },
+        ],
+        link: 'https://www.mozaydo.ir/',
+
+        desktopShots:[
+            { description: 'Mozaydo-desktop-shot-1', img: desk1 },
+            { description: 'Mozaydo-desktop-shot-2', img: desk2 },
+            { description: 'Mozaydo-desktop-shot-3', img: desk3 },
+            { description: 'Mozaydo-desktop-shot-4', img: desk4 },
+        ],
+
+        description: [
+            'Intuitive search functionality to easily find specific car models or brands',
+            'Dynamic filtering options to narrow down search results based on price , state , year and more',
+            'Detailed car listings with high-quality images, specifications, and auction details',
+            'User authentication and account management for bidding and selling cars',
+            'Sufficient User Experience ',
+        ],
+    }
+    ,
     {
         date: '2023',
         industry: 'Ecommerce Marketplace',
@@ -116,7 +154,7 @@ export const projects: ProjectType[] = [
             { description: 'tanaland-desktop-shot-3', img: tanalandDesktop3 },
             { description: 'tanaland-desktop-shot-4', img: tanalandDesktop4 },
         ],
-        link: 'https://www.tanaland.com/',
+        link: 'https://www.tanaland.ir/',
         mobileShots: [
             { description: 'tanaland-mobile-shot-1', img: tanalandMobile1 },
             { description: 'tanaland-mobile-shot-2', img: tanalandMobile2 },
@@ -230,7 +268,7 @@ export const projects: ProjectType[] = [
             'Collaborated with back-end developers to integrate front-end and back-end systems ',
             'Utilized modern front-end technologies and frameworks to enhance the applications capabilities'
         ],
-        desktopShots:[
+        desktopShots: [
             { description: 'bot-desktop-shot-1', img: botDashboard },
             { description: 'bot-desktop-shot-2', img: botSendOrder1 },
             { description: 'bot-desktop-shot-3', img: botSendOrder2 },
