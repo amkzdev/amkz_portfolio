@@ -56,7 +56,7 @@ export const Cover = () => {
                 </div>
 
             </div>
-            <div className='lg:w-[200px] w-[180px] aspect-square relative rounded-lg overflow-hidden shrink-0 order-1 lg:order-2'>
+            <div className='lg:w-[230px] w-[180px] aspect-square relative rounded-lg overflow-hidden shrink-0 order-1 lg:order-2'>
 
                 <Image src={selfie}  alt='amir-mahdi-keshan-zare (amkz)' className='object-cover' fill />
             </div>
