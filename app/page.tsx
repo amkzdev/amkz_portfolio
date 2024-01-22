@@ -5,6 +5,7 @@ import selfie from 'assets/images/selfie/new.jpg'
 
 
 export const metadata: Metadata = {
+  metadataBase:new URL('https://amkz.dev'),
   title: 'Amir Mahdi Keshan Zare (AMKZ) Portfolio',
   description: 'This is Amir Mahdi Keshan Zare Offical Portfolio , I Am A Professional Front End Developer , Feel Free To Get In Touch With (amkz.dev@gmail.com)',
   authors: [{ name: 'Amir Mahdi Keshan Zare', url: 'amkz.dev@gmail.com' }],
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     title: 'Amir Mahdi Keshan Zare (AMKZ) Portfolio',
     siteName: 'AMKZ Portfolio',
     images: [
-      { url: selfie.src , type:'logo'}
+      { url: './new.jpg' , type:'logo'}
     ],
     
   },
