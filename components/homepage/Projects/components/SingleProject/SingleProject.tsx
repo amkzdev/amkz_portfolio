@@ -67,7 +67,7 @@ export const SingleProject = ({ logo, name, date, industry, stack, techs, descri
             </div>
 
 
-            <div className='flex flex-col w-full gap-4 '>
+            {!!desktopShots && <div className='flex flex-col w-full gap-4 '>
 
                 <span className='text-gray-300 '>Sample Screenshots:</span>
 
@@ -84,7 +84,7 @@ export const SingleProject = ({ logo, name, date, industry, stack, techs, descri
                 </div>
 
 
-            </div>
+            </div>}
 
         </div>
     )

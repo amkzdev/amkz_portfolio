@@ -94,9 +94,38 @@ import m1 from 'assets/images/projects/Mozaydo/m1.jpeg'
 import m2 from 'assets/images/projects/Mozaydo/m2.jpeg'
 import m3 from 'assets/images/projects/Mozaydo/m3.jpeg'
 
+import atlasLogo from 'assets/images/projects/Atlas/atlaslogo.svg'
 
 
 export const projects: ProjectType[] = [
+
+    {
+        date: '2024',
+        industry: 'Real Estate',
+        logo: atlasLogo,
+        name: 'Atlas Real Estate Department',
+        stack: 'Front End',
+        techs: [
+            { name: 'Next 14', image: next },
+            { name: 'React', image: react },
+            { name: 'React Query', image: reactQuery },
+            { name: 'Typescript', image: ts },
+            { name: 'JavaScript', image: js },
+            { name: 'Tailwind', image: tailwind },
+        ],
+        link: 'https://amlakatlas.com/',
+        description: [
+            'Develop interactive features and functionalities using Next JS, CSS, and TypeScript',
+            'Work closely with back-end developers to integrate front-end components with server-side logic',
+            'Ensure cross-browser compatibility and responsiveness of the web app',
+            'Collaborate with UX/UI designer to create user-friendly and visually appealing interfaces',
+            "Stay up-to-date with the latest web development trends and technologies to continuously improve the web app's design and functionality.",
+            'Optimize performance and loading speed of the web app for a seamless user experience',
+            // 'Implement data visualization tools to display real estate data in a clear and engaging manner',
+            // 'Conduct thorough testing and debugging to identify and fix any issues',
+        ]
+
+    },
 
 
     {
@@ -115,16 +144,16 @@ export const projects: ProjectType[] = [
         ],
         link: 'https://www.mozaydo.ir/',
 
-        desktopShots:[
+        desktopShots: [
             { description: 'Mozaydo-desktop-shot-1', img: desk1 },
             { description: 'Mozaydo-desktop-shot-2', img: desk2 },
             { description: 'Mozaydo-desktop-shot-3', img: desk3 },
             { description: 'Mozaydo-desktop-shot-4', img: desk4 },
         ],
-        mobileShots:[
+        mobileShots: [
             { description: 'Mozaydo-mobile-shot-1', img: m1 },
             { description: 'Mozaydo-mobile-shot-2', img: m2 },
-            { description: 'Mozaydo-mobile-shot-3', img: m3 },  
+            { description: 'Mozaydo-mobile-shot-3', img: m3 },
         ]
         ,
 
