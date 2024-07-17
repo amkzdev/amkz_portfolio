@@ -13,6 +13,16 @@ const SocialMedia = ({ link, icon, title }: { link: string, icon: typeof github,
     <Image src={icon} fill alt={title} className='object-contain' />
 </Link>
 
+const TopItem = ({ icon: Icon, text, number }: { icon: any, text: string, number: number | string }) => {
+    return <div className='border rounded-xl border-gray-400 text-gray-300 flex flex-row gap-2 justify-center items-center p-2 text-center'>
+        {/* <Icon /> */}
+        <div className='flex flex-row gap-2 items-center'>
+            <span className='text-xl lg:text-2xl text-yellow-primary '>+{number}</span>
+            <span className='text-base' >{text}</span>
+        </div>
+
+    </div>
+}
 
 export const Cover = () => {
     return (
@@ -21,17 +31,27 @@ export const Cover = () => {
             <div className='flex flex-col justify-between gap-4 lg:gap-6 order-2 lg:order-1'>
 
 
+                <div className='flex flex-col gap-4 items-center lg:items-start justify-between'>
 
-                <div className='flex flex-col gap-2 lg:gap-4'>
+                    <div className='flex flex-col gap-2 lg:gap-4'>
 
+                        <div className='text-yellow-primary flex flex-row gap-2  items-center justify-center lg:justify-start lg:items-end'>
+                            <span className='text-xl lg:text-3xl whitespace-nowrap'>Amir Mahdi Keshan Zare</span>
+                            <i className='text-sm lg:text-lg text-gray-400 '>(AMKZ)</i>
+                        </div>
 
-                    <div className='text-yellow-primary flex flex-row gap-2  items-center justify-center lg:justify-start lg:items-end'>
-                        <span className='text-xl lg:text-3xl whitespace-nowrap'>Amir Mahdi Keshan Zare</span>
-                        <i className='text-sm lg:text-lg text-gray-400 '>(AMKZ)</i>
+                        <span className='text-gray-200 text-lg lg:text-2xl text-center lg:text-left font-semibold'>Front End Developer</span>
                     </div>
 
-                    <span className='text-gray-200 text-lg lg:text-2xl text-center lg:text-left font-semibold'>Front End Developer</span>
 
+                    <div className='flex flex-col lg:flex-row gap-2  rounded '>
+                        <TopItem icon={() => { }} text='Years Of Experience' number={3} />
+                        <TopItem icon={() => { }} text='Projects' number={10} />
+                        <TopItem icon={() => { }} text='Contributes' number={'10K'} />
+                        {/* <div>+3 Years Of Experience</div>
+                        <div>+10 Projects</div>
+                        <div>+10K Contributes</div> */}
+                    </div>
 
                 </div>
 
@@ -58,7 +78,7 @@ export const Cover = () => {
             </div>
             <div className='lg:w-[230px] w-[180px] aspect-square relative rounded-lg overflow-hidden shrink-0 order-1 lg:order-2'>
 
-                <Image src={selfie}  alt='amir-mahdi-keshan-zare (amkz)' className='object-cover' fill />
+                <Image src={selfie} alt='amir-mahdi-keshan-zare (amkz)' className='object-cover' fill />
             </div>
 
         </div>
