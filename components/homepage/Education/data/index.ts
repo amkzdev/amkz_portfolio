@@ -7,7 +7,7 @@ export const educations : EducationType [] = [
         grade:'A',
         level:'Bechelor',
         logo:uni,
-        name:'Shahid Tajaei University',
+        name:'Shahid Rajaei University',
         field:'Computer Engineering'
     } ,
     {
