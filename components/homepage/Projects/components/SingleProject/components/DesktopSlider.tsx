@@ -21,6 +21,8 @@ export const DesktopSlider = ({ items, fullWidth }: { items: ProjectType['deskto
             }}
             style={{ padding: '4px' }}
             className='h-full rounded border border-gray-400 bg-gray-400 dark:bg-inherit '
+            // keyboard={{enabled:true , onlyInViewport:true }}
+        
 
         >
             {items?.map(item => <SwiperSlide key={item.img.src} className='bg-gray-200 rounded '>
