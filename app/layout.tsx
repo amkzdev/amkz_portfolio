@@ -13,10 +13,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='bg-frame-black'>
+    <html lang="en" className='bg-frame-light dark:bg-frame-dark'>
       <ClientLayout>
 
-        <body className={'bg-content-black m-0 p-0 container max-w-[1366px] mx-auto text-[12px] lg:text-[14px] mt-[40px]  lg:mt-[60px] '.concat(Montserrat.className)}>
+        <body className={'bg-content-light dark:bg-content-dark m-0 p-0 container max-w-[1366px] mx-auto text-[12px] lg:text-[14px] mt-[40px]  lg:mt-[60px] '.concat(Montserrat.className)}>
 
           <Header />
           {children}

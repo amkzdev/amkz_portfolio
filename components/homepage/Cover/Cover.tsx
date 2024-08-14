@@ -17,7 +17,7 @@ const TopItem = ({ icon: Icon, text, number }: { icon: any, text: string, number
     return <div className='border rounded-xl border-gray-400 text-gray-300 flex flex-row gap-2 justify-center items-center p-2 text-center'>
         {/* <Icon /> */}
         <div className='flex flex-row gap-2 items-center'>
-            <span className='text-xl lg:text-2xl text-yellow-primary '>+{number}</span>
+            <span className='text-xl lg:text-2xl text-light-primary dark:text-dark-primary '>+{number}</span>
             <span className='text-base' >{text}</span>
         </div>
 
@@ -35,7 +35,7 @@ export const Cover = () => {
 
                     <div className='flex flex-col gap-2 lg:gap-4'>
 
-                        <div className='text-yellow-primary flex flex-row gap-2  items-center justify-center lg:justify-start lg:items-end'>
+                        <div className='text-light-primary dark:text-dark-primary flex flex-row gap-2  items-center justify-center lg:justify-start lg:items-end'>
                             <span className='text-xl lg:text-3xl whitespace-nowrap'>Amir Mahdi Keshan Zare</span>
                             <i className='text-sm lg:text-lg text-gray-400 '>(AMKZ)</i>
                         </div>

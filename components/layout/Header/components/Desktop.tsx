@@ -32,8 +32,8 @@ export const Desktop = () => {
     useEffect(() => isSticky(), [])
 
 
-    return <div className={'flex p-2 px-4 flex-row items-center  justify-between  top-0 transition-all  duration-300 fixed w-full max-w-[1366px] bg-content-black z-40 border-yellow-primary border-b '} >
-        <div className='flex flex-row items-center gap-2 text-yellow-primary flex-1'>
+    return <div className={'flex p-2 px-4 flex-row items-center  justify-between  top-0 transition-all  duration-300 fixed w-full max-w-[1366px] bg-content-light dark:bg-content-dark z-40 border-light-primary dark:border-dark-primary border-b '} >
+        <div className='flex flex-row items-center gap-2 text-light-primary dark:text-dark-primary flex-1'>
             <div className='w-[35px] lg:w-[45px] aspect-square relative'>
                 <Image alt='Amir Mahdi Keshan Zare Logo' src={lightLogo} fill />
             </div>
@@ -41,11 +41,11 @@ export const Desktop = () => {
             <span className='font-semibold text-sm block lg:hidden'>AMKZ Portfolio</span>
         </div>
         <div className='hidden lg:flex flex-row items-center justify-center gap-4 flex-1'>
-            {menuItems.map((item, index) => <NextLink key={item.url} href={item.url} className='text-yellow-primary hover:text-primary-blue'>{item.name}</NextLink>)}
+            {menuItems.map((item, index) => <NextLink key={item.url} href={item.url} className='text-light-primary dark:text-dark-primary hover:text-primary-blue'>{item.name}</NextLink>)}
         </div>
         <HamMenu />
         {/* <button className='lg:hidden flex cursor-pointer'>
-            <Bars3Icon className='w-8 h-8 text-yellow-primary' />
+            <Bars3Icon className='w-8 h-8 text-light-primary dark:text-dark-primary' />
 
         </button> */}
         <div className='flex-1 flex flex-row gap-2 justify-end fixed lg:static  left-1/2  bottom-4 -translate-x-1/2 lg:translate-x-0  lg:left-0'>
@@ -53,7 +53,7 @@ export const Desktop = () => {
             <ContactMeButton />
             <ThemeChanger />
 
-            {/* <button className='bg-yellow-primary p-2 flex  flex-row  font-semibold rounded px-8 items-center gap-2'>
+            {/* <button className='bg-light-primary dark:bg-dark-primary p-2 flex  flex-row  font-semibold rounded px-8 items-center gap-2'>
             <span>Contact Me</span>
             <PhoneIcon className='w-4 h-4'/>
         </button> */}

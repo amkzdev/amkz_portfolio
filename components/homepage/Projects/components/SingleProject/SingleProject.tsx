@@ -33,7 +33,7 @@ export const SingleProject = ({ logo, name, date, industry, stack, techs, descri
                 </div>
                 {
                     !!link &&
-                    <a target='_blank' href={link} className='text-yellow-primary border-yellow-primary border items-center justify-center rounded flex flex-row gap-2 px-2 py-1'>
+                    <a target='_blank' href={link} className='text-light-primary dark:text-dark-primary border-light-primary dark:border-dark-primary border items-center justify-center rounded flex flex-row gap-2 px-2 py-1'>
                         <span className='whitespace-nowrap'>Visit Online</span>
                         <PlayIcon className='w-6 aspect-square' />
                     </a>}

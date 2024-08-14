@@ -16,10 +16,14 @@ module.exports = {
     },
     extend: {
       colors: {
-        'yellow-primary': '#F8E620',
-        'content-black':'#1C1E1F',
-        'frame-black':'#28272A',
-        'primary-blue':'#035BBC'
+        'dark-primary': '#F8E620',
+        'content-dark':'#1C1E1F',
+        'frame-dark':'#28272A',
+        'primary-blue-old':'#035BBC',
+
+        'content-light':'#fff',
+        'light-primary':'#005B96',
+        'frame-light':'#f4f2ee'
 
       }
 

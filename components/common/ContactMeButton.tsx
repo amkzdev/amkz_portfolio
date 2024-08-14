@@ -31,7 +31,7 @@ export const ContactMeButton = () => {
 
             <>
 
-                <button className='bg-yellow-primary p-2 flex  flex-row  font-semibold rounded px-8 items-center gap-2' onClick={() => setOpen(!open)}>
+                <button className='bg-light-primary dark:bg-dark-primary p-2 flex  flex-row  font-semibold rounded px-8 items-center gap-2' onClick={() => setOpen(!open)}>
                     <span>Contact Me</span>
                     <PhoneIcon className='w-4 h-4' />
                 </button>
@@ -67,7 +67,7 @@ export const ContactMeButton = () => {
             </>
         )
 
-    return <button className='bg-yellow-primary p-2 flex  flex-row  font-semibold rounded px-8 items-center gap-2' onClick={() => setOpen(!open)}>
+    return <button className='bg-light-primary dark:bg-dark-primary p-2 flex  flex-row  font-semibold rounded px-8 items-center gap-2' onClick={() => setOpen(!open)}>
         <span>Contact Me</span>
         <PhoneIcon className='w-4 h-4' />
     </button>
