@@ -9,8 +9,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 export const MobileSlider = ({ items }: { items: ProjectType['desktopShots'] }) => {
     return (
         <Swiper
+        dir='ltr'
             spaceBetween={10}
-            slidesPerView={2}
+            slidesPerView={2.5}
 
             className='h-full'
         >

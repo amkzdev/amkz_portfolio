@@ -14,7 +14,7 @@ const SocialMedia = ({ link, icon, title }: { link: string, icon: typeof github,
 </Link>
 
 const TopItem = ({ icon: Icon, text, number }: { icon: any, text: string, number: number | string }) => {
-    return <div className='border rounded-xl border-gray-400 text-gray-300 flex flex-row gap-2 justify-center items-center p-2 text-center'>
+    return <div className='border rounded-xl border-blue-1 dark:border-gray-400 text-blue-2 dark:text-gray-300 flex flex-row gap-2 justify-center items-center p-2 text-center'>
         {/* <Icon /> */}
         <div className='flex flex-row gap-2 items-center'>
             <span className='text-xl lg:text-2xl text-light-primary dark:text-dark-primary '>+{number}</span>
@@ -36,11 +36,11 @@ export const Cover = () => {
                     <div className='flex flex-col gap-2 lg:gap-4'>
 
                         <div className='text-light-primary dark:text-dark-primary flex flex-row gap-2  items-center justify-center lg:justify-start lg:items-end'>
-                            <span className='text-xl lg:text-3xl whitespace-nowrap'>Amir Mahdi Keshan Zare</span>
-                            <i className='text-sm lg:text-lg text-gray-400 '>(AMKZ)</i>
+                            <span className='text-xl lg:text-3xl whitespace-nowrap font-semibold'>Amir Mahdi Keshan Zare</span>
+                            <i className='text-sm lg:text-lg text-blue-1 dark:text-gray-400 '>(AMKZ)</i>
                         </div>
 
-                        <span className='text-gray-200 text-lg lg:text-2xl text-center lg:text-left font-semibold'>Front End Developer</span>
+                        <span className='text-blue-2 dark:text-gray-200 text-lg lg:text-2xl text-center lg:text-left font-semibold'>Front End Developer</span>
                     </div>
 
 
@@ -55,7 +55,7 @@ export const Cover = () => {
 
                 </div>
 
-                <p className='text-gray-400 text-sm leading-6 text-center lg:text-left'>
+                <p className='text-blue-1 dark:text-gray-400 text-sm leading-6 text-center lg:text-left'>
                     Experienced Front End Developer with a demonstrated history of working in the information technology and services industry. Skilled in React, Next , Tailwindcss , Material UI , HTML, JavaScript, TypeScript, CSS, SASS, LESS, and JQuery.
                     I have an eye on design and make creative user interfaces.
                 </p>

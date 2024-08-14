@@ -23,7 +23,9 @@ module.exports = {
 
         'content-light':'#fff',
         'light-primary':'#005B96',
-        'frame-light':'#f4f2ee'
+        'frame-light':'#f4f2ee',
+        'blue-1':'#03396C',
+        'blue-2':'#011F4B'
 
       }
 
