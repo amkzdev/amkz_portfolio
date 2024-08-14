@@ -3,9 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
   background-color: #080E09;
-}
+} */
 
 a {
   text-decoration: none;

@@ -7,6 +7,7 @@ import { PhoneIcon } from '@heroicons/react/24/solid'
 import { HamMenu } from './HamMenu'
 import { menuItems } from '../data'
 import { ContactMeButton } from '@/components/common'
+import { ThemeChanger } from '@/components/common/ThemeChanger/ThemeChanger'
 
 
 export const Desktop = () => {
@@ -47,10 +48,10 @@ export const Desktop = () => {
             <Bars3Icon className='w-8 h-8 text-yellow-primary' />
 
         </button> */}
-        <div className='flex-1 flex flex-row justify-end fixed lg:static  left-1/2  bottom-4 -translate-x-1/2 lg:translate-x-0  lg:left-0'>
-
+        <div className='flex-1 flex flex-row gap-2 justify-end fixed lg:static  left-1/2  bottom-4 -translate-x-1/2 lg:translate-x-0  lg:left-0'>
 
             <ContactMeButton />
+            <ThemeChanger />
 
             {/* <button className='bg-yellow-primary p-2 flex  flex-row  font-semibold rounded px-8 items-center gap-2'>
             <span>Contact Me</span>
