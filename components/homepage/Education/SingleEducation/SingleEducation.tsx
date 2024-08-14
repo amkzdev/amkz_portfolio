@@ -2,10 +2,11 @@ import Image from 'next/image'
 import React from 'react'
 import { EducationType } from '@/types'
 import { AcademicCapIcon, CalendarIcon, StarIcon } from '@heroicons/react/24/solid'
+import clsx from 'clsx'
 // import { MobileSlider } from './components/MobileSlider'
 // import { DesktopSlider } from './components/DesktopSlider'
 
-export const SingleEducation = ({ logo, name, date, grade , level , field }: EducationType) => {
+export const SingleEducation = ({ logo, name, date, grade , level , field  ,bgLogo}: EducationType) => {
     return (
         <div className='flex flex-col gap-4'>
 
@@ -13,13 +14,13 @@ export const SingleEducation = ({ logo, name, date, grade , level , field }: Edu
 
                 <div className='flex flex-row gap-4  '>
 
-                    <div className='w-[90px] lg:w-[120px] aspect-square p-2 relative box-border rounded overflow-hidden '>
-                        <Image src={logo.src} fill alt={name} className='object-contain  rounded-lg ' style={{ borderRadius: '8px' }} />
+                    <div className='w-[90px] lg:w-[120px] aspect-square p-2 relative box-border rounded overflow-hidden shrink-0 '>
+                        <Image src={logo.src} fill alt={name} className={clsx('object-contain  rounded-lg ' ,bgLogo ? 'bg-blue-1 p-2 border dark:border-none dark:bg-inherit' : '')} style={{ borderRadius: '8px' }} />
                     </div>
 
-                    <div className='flex flex-col justify-between text-gray-300 basis-2/3 lg:basis-full'>
+                    <div className='flex flex-col justify-between text-blue-2 dark:text-gray-300 basis-2/3 lg:basis-full'>
 
-                        <span className='text-gray-200 text-base lg:text-lg font-semibold whitespace-pre-wrap '>{name}</span>
+                        <span className='text-gray-800 dark:text-gray-200 text-base lg:text-lg font-semibold whitespace-pre-wrap '>{name}</span>
 
                         <div className='flex flex-row items-center gap-2'><CalendarIcon className='w-4 lg:w-6 aspect-square ' /><span>{date}</span></div>
                         <div className='flex flex-row items-center gap-2'><AcademicCapIcon className='w-4 lg:w-6 aspect-square ' /><span>{level} - {field}</span></div>

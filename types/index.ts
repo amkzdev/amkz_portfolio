@@ -10,7 +10,8 @@ export interface ProjectType {
     desktopShots?: Array<{ img: StaticImageData, description: string }>,
     mobileShots?: Array<{ img: StaticImageData, description: string }>,
     description?: string[],
-    link?: string
+    link?: string,
+    bgLogo?:boolean
 }
 
 
@@ -24,7 +25,8 @@ export interface WorkExperinceType {
     desktopShots?: Array<{ img: StaticImageData, description: string }>,
     mobileShots?: Array<{ img: StaticImageData, description: string }>,
     description?: string[],
-    link?: string
+    link?: string,
+    bgLogo?:boolean
 }
 
 
@@ -34,7 +36,8 @@ export interface EducationType {
     level: string,
     grade: string,
     logo: StaticImageData,
-    field:string
+    field:string,
+    bgLogo?:boolean
     // techs?: Array<{ name: string, image: StaticImageData }>,
     // desktopShots?: Array<{ img: StaticImageData, description: string }>,
     // mobileShots?: Array<{ img: StaticImageData, description: string }>,

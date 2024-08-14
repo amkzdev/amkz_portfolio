@@ -12,17 +12,18 @@ export const DesktopSlider = ({ items, fullWidth }: { items: ProjectType['deskto
             breakpoints={{
                 300: {
                     spaceBetween: 10,
-                    slidesPerView: 1.2
+                    slidesPerView: 1.5
                 },
                 1080: {
                     spaceBetween: 10,
                     slidesPerView: fullWidth ? 3.5 : 2.5
                 }
             }}
-            className='h-full'
+            style={{ padding: '4px' }}
+            className='h-full rounded border border-gray-400 bg-gray-400 dark:bg-inherit '
 
         >
-            {items?.map(item => <SwiperSlide key={item.img.src} className='bg-gray-200 rounded'>
+            {items?.map(item => <SwiperSlide key={item.img.src} className='bg-gray-200 rounded '>
                 <div className='w-full h-full '>
                     <Image src={item.img} fill alt={item.description} className='rounded object-scale-down lg:object-contain' />
                 </div>

@@ -1,5 +1,5 @@
 import { WorkExperinceType } from "@/types";
-import logo from 'assets/logos/white.png'
+import logo from 'assets/logos/yellow.png'
 import botLogo from 'assets/images/bot/logo.jpg'
 
 import charmingLogo from 'assets/images/work experince/charming/logo.jpg'

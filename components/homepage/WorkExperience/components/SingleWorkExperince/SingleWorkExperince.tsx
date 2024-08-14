@@ -14,12 +14,12 @@ export const SingleWorkExperince = ({ logo, name, date, industry, stack, techs, 
                 <div className='flex flex-row gap-4'>
 
                     <div className='w-[90px] lg:w-[120px] aspect-square p-2 relative box-border rounded overflow-hidden'>
-                        <Image src={logo.src} fill alt={name} className='object-contain  rounded-lg ' style={{ borderRadius: '8px' }} />
+                        <Image src={logo.src} fill alt={name} className='object-contain  rounded-lg  ' style={{ borderRadius: '8px' }} />
                     </div>
 
-                    <div className='flex flex-col justify-between text-gray-300'>
+                    <div className='flex flex-col justify-between text-blue-2 dark:text-gray-300'>
 
-                        <span className='text-gray-200 text-base lg:text-lg font-semibold'>{name}</span>
+                        <span className='text-gray-800 dark:text-gray-200 text-base lg:text-lg font-semibold'>{name}</span>
 
                         <div className='flex flex-row items-center gap-2'><CalendarIcon className='w-4 lg:w-6 aspect-square ' /><span>{date}</span></div>
                         <div className='flex flex-row items-center gap-2'><CubeTransparentIcon className='w-4 lg:w-6 aspect-square ' /><span>{industry}</span></div>
@@ -43,8 +43,8 @@ export const SingleWorkExperince = ({ logo, name, date, industry, stack, techs, 
             <div className='flex flex-row items-stretch lg:items-start flex-wrap lg:flex-nowrap gap-4 w-full'>
 
                 <div className='flex flex-col gap-2 basis-full lg:basis-2/3'>
-                    <span className='text-gray-300'>Description:</span>
-                    <ul className='text-gray-400 ml-4 leading-6'>
+                    <span className='text-blue-2 dark:text-gray-300'>Description:</span>
+                    <ul className='text-gray-700 dark:text-gray-400 ml-4 leading-6'>
                         {description?.map(item => <li className='list-disc'>{item}</li>)}
                     </ul>
 

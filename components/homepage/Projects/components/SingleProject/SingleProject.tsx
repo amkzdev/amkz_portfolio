@@ -4,8 +4,9 @@ import Image from 'next/image'
 import React from 'react'
 import { MobileSlider } from './components/MobileSlider'
 import { DesktopSlider } from './components/DesktopSlider'
+import clsx from 'clsx'
 
-export const SingleProject = ({ logo, name, date, industry, stack, techs, description, desktopShots, link, mobileShots }: ProjectType) => {
+export const SingleProject = ({ logo, name, date, industry, stack, techs, description, desktopShots, link, mobileShots , bgLogo }: ProjectType) => {
     return (
         <div className='flex flex-col gap-4'>
 
@@ -14,10 +15,10 @@ export const SingleProject = ({ logo, name, date, industry, stack, techs, descri
                 <div className='flex flex-row gap-4'>
 
                     <div className='w-[90px] lg:w-[120px] p-2 aspect-square relative box-border rounded overflow-hidden'>
-                        <Image src={logo.src} fill alt={name} className='object-contain  rounded-lg ' style={{ borderRadius: '8px' }} />
+                        <Image src={logo.src} fill alt={name} className={clsx('object-contain  rounded-lg ' ,bgLogo ? 'bg-blue-1 p-2 border dark:border-none dark:bg-inherit' : '')} style={{ borderRadius: '8px' }} />
                     </div>
 
-                    <div className='flex flex-col justify-between text-blue-1 dark:text-gray-300'>
+                    <div className='flex flex-col justify-between text-blue-2 dark:text-gray-300'>
 
                         <span className='text-gray-800 dark:text-gray-200 text-base lg:text-lg font-semibold'>{name}</span>
 

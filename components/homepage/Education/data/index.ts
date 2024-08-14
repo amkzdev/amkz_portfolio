@@ -16,7 +16,8 @@ export const educations : EducationType [] = [
         level:'Diploma',
         logo:sampad,
         name:'National Organization for Development of Exceptional Talents (Sampad)',
-        field:'Mathematics'
+        field:'Mathematics',
+        bgLogo:true
     } ,
 
 ]

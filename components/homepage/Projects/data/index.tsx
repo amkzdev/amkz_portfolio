@@ -251,6 +251,7 @@ export const projects: ProjectType[] = [
         date: '2022-2023',
         industry: 'Healthcare and Social Assistance',
         logo: sampabLogo,
+        bgLogo:true,
         stack: 'Front End',
         techs: [
             { name: 'React', image: react },
