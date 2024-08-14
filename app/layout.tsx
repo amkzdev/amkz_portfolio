@@ -3,6 +3,8 @@ import { Container, Header } from '@components/layout'
 import './globals.css'
 import { Montserrat } from './fonts'
 import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import Script from 'next/script';
 import { ClientLayout } from './ClientLayout';
 

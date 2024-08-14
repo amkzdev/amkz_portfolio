@@ -3,7 +3,7 @@
 import { ProjectType } from '@/types';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import { Keyboard, Pagination, Navigation } from 'swiper/modules';
 // Import Swiper styles
 
 export const DesktopSlider = ({ items, fullWidth }: { items: ProjectType['desktopShots'], fullWidth: boolean }) => {
@@ -19,8 +19,10 @@ export const DesktopSlider = ({ items, fullWidth }: { items: ProjectType['deskto
                     slidesPerView: fullWidth ? 3.5 : 2.5
                 }
             }}
-            style={{ padding: '4px' }}
-            className='h-full rounded border border-gray-400 bg-gray-400 dark:bg-inherit '
+            style={{ padding: '- px' , paddingBottom:'35px' }}
+            className='h-full rounded border border-gray-400 bg- gray-400 dark:bg-inherit '
+            modules={[Pagination]}
+            pagination={{enabled:true , clickable:true}}
             // keyboard={{enabled:true , onlyInViewport:true }}
         
 
