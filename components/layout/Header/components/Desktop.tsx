@@ -38,7 +38,7 @@ export const Desktop = () => {
                 <Image alt='Amir Mahdi Keshan Zare Logo' src={lightLogo} fill />
             </div>
             <span className='text-lg font-semibold hidden lg:block'>Amir Mahdi Keshan Zare (AMKZ)</span>
-            <span className='font-semibold text-sm block lg:hidden'>AMKZ Portfolio</span>
+            <span className='text-base lg:text-sm font-bold block lg:hidden'>AMKZ Portfolio</span>
         </div>
         <div className='hidden lg:flex flex-row items-center justify-center gap-4 flex-1'>
             {menuItems.map((item, index) => <NextLink key={item.url} href={item.url} className='text-light-primary dark:text-dark-primary hover:text-primary-blue'>{item.name}</NextLink>)}
