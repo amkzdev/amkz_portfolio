@@ -19,17 +19,17 @@ export const DesktopSlider = ({ items, fullWidth }: { items: ProjectType['deskto
                     slidesPerView: fullWidth ? 3.5 : 2.5
                 }
             }}
-            style={{ padding: '- px' , paddingBottom:'35px' }}
-            className='h-full rounded border border-gray-400 bg- gray-400 dark:bg-inherit '
+            style={{   paddingBottom:'40px' }}
+            className='h-full rounded bo rder border-gray-400 bg- gray-400 dark:bg-inherit '
             modules={[Pagination]}
             pagination={{enabled:true , clickable:true}}
             // keyboard={{enabled:true , onlyInViewport:true }}
         
 
         >
-            {items?.map(item => <SwiperSlide key={item.img.src} className='bg-gray-200 rounded '>
+            {items?.map(item => <SwiperSlide key={item.img.src} className='bg-gray-200 rounded border border-gray-200 '>
                 <div className='w-full h-full '>
-                    <Image src={item.img} fill alt={item.description} className='rounded object-scale-down lg:object-contain' />
+                    <Image src={item.img} sizes='40vh' fill alt={item.description} className='rounded object-scale-down lg:object-contain' />
                 </div>
             </SwiperSlide>)}
         </Swiper>

@@ -2,6 +2,7 @@
 'use client'
 import { ProjectType } from '@/types';
 import Image from 'next/image';
+import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -12,8 +13,10 @@ export const MobileSlider = ({ items }: { items: ProjectType['desktopShots'] }) 
             dir='ltr'
             spaceBetween={10}
             slidesPerView={2.5}
-            style={{ padding: '4px' }}
-            className='h-full rounded border border-gray-400 bg-gray-400 dark:bg-inherit '
+            style={{paddingBottom:'40px' }}
+            className='h-full rounded  dark:bg-inherit '
+            modules={[Pagination]}
+            pagination={{enabled:true , clickable:true}}
         >
             {items?.map(item => <SwiperSlide key={item.img.src} className='bg-gray-200  rounded '>
                 <div className='w-full h-fit'>
