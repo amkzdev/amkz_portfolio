@@ -11,7 +11,7 @@ import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 
-export const MobileSlider = ({ items }: { items: ProjectType['desktopShots'] }) => {
+export const MobileSlider = ({ items , fullWidth}: { items: ProjectType['desktopShots'], fullWidth?:boolean }) => {
 
     const [open, setOpen] = useState<boolean>(false)
 
@@ -26,7 +26,7 @@ export const MobileSlider = ({ items }: { items: ProjectType['desktopShots'] }) 
             slidesPerView: state ? 3.2 : 2.75
         },
         1200: {
-            slidesPerView: state ? 3.5 : 4.5
+            slidesPerView: state ? 3.5 :  (fullWidth ? 6.5 : 4.5)
         }
 
     })

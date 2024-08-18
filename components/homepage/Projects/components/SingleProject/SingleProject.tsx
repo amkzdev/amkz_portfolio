@@ -68,18 +68,18 @@ export const SingleProject = ({ logo, name, date, industry, stack, techs, descri
             </div>
 
 
-            {!!desktopShots && <div className='flex flex-col w-full gap-4 '>
+            {(!!desktopShots || !!mobileShots) && <div className='flex flex-col w-full gap-4 '>
 
                 <span className='text-blue-2 dark:text-gray-300 '>Sample Screenshots:</span>
 
                 <div className='grid grid-cols-3 gap-4 w-full  '>
 
-                    <div className={`col-span-3 h-[200px] ${!mobileShots ? '' : 'lg:col-span-2 '}`}>
+                    {!!desktopShots && <div className={`col-span-3 h-[200px] ${!mobileShots ? '' : 'lg:col-span-2 '}`}>
                         <DesktopSlider items={desktopShots} fullWidth={!mobileShots} />
-                    </div>
+                    </div>}
 
-                    {!!mobileShots && <div className='col-span-3 lg:col-span-1  lg:h-[200px] h-[300px]'>
-                        <MobileSlider items={mobileShots} />
+                    {!!mobileShots && <div className={clsx ('col-span-3  lg:h-[200px] h-[300px]'  , !desktopShots ? 'lg: w-full' :  ' lg:col-span-1')}>
+                        <MobileSlider items={mobileShots} fullWidth={!desktopShots}/>
                     </div>}
 
                 </div>

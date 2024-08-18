@@ -111,7 +111,56 @@ import atlas_m4 from 'assets/images/projects/Atlas/m (4).png'
 import atlas_m5 from 'assets/images/projects/Atlas/m (5).png'
 import atlas_m6 from 'assets/images/projects/Atlas/m (6).png'
 
+import eiffelLogo from 'assets/images/projects/eiffel/eifellogo.png'
+
+import eiffel_m1 from 'assets/images/projects/eiffel/m1.png'
+import eiffel_m2 from 'assets/images/projects/eiffel/m2.png'
+import eiffel_m3 from 'assets/images/projects/eiffel/m3.png'
+import eiffel_m4 from 'assets/images/projects/eiffel/m4.png'
+import eiffel_m5 from 'assets/images/projects/eiffel/m5.png'
+import eiffel_m6 from 'assets/images/projects/eiffel/m6.png'
+import eiffel_m7 from 'assets/images/projects/eiffel/m7.png'
+
 export const projects: ProjectType[] = [
+
+    {
+        date: '2024',
+        industry: 'Online Shop',
+        logo: eiffelLogo,
+        name: 'Eiffel Online Shop',
+        stack: 'Front End',
+        techs: [
+            { name: 'Next 14', image: next },
+            { name: 'React', image: react },
+            { name: 'React Query', image: reactQuery },
+            { name: 'Typescript', image: ts },
+            { name: 'JavaScript', image: js },
+            { name: 'Tailwind', image: tailwind },
+        ],
+
+        description: [
+            'Optimized for all devices, ensuring a consistent look and feel on desktops, tablets, and smartphones.',
+            'Utilizes Next.js features for server-side rendering and static site generation, resulting in quick load times',
+            'Comprehensive listings of home appliances, including detailed descriptions, specifications, and high-quality images.',
+            'Advanced search functionality with filters to help users find specific products based on brand, price range, and features.',
+            'Customers can leave feedback and ratings on products, helping others make informed purchasing decisions.',
+            'Easy-to-use shopping cart that allows users to add, remove, and modify items before checkout.',
+            'Implements secure payment gateways for safe transactions, ensuring user data protection.',
+            'Allows users to create accounts for personalized experiences, order tracking, and saving favorite products.',
+            'Built with Next.js to ensure high visibility on search engines, driving more traffic to the app.',
+        ],
+        mobileShots: [
+            { description: 'Eiffel', img: eiffel_m1 },
+            { description: 'Eiffel', img: eiffel_m2 },
+            { description: 'Eiffel', img: eiffel_m3 },
+            { description: 'Eiffel', img: eiffel_m4 },
+            { description: 'Eiffel', img: eiffel_m7 },
+            { description: 'Eiffel', img: eiffel_m5 },
+            { description: 'Eiffel', img: eiffel_m6 },
+        ],
+        link:'https://amkztest.liara.run/'
+    },
+
 
     {
         date: '2024',
@@ -138,23 +187,23 @@ export const projects: ProjectType[] = [
             // 'Implement data visualization tools to display real estate data in a clear and engaging manner',
             // 'Conduct thorough testing and debugging to identify and fix any issues',
         ],
-        desktopShots:[
-            {img :atlas_d1 , description:'Atlas'},
-            {img :atlas_d2 , description:'Atlas'},
-            {img :atlas_d3 , description:'Atlas'},
-            {img :atlas_d4 , description:'Atlas'},
-            {img :atlas_d5 , description:'Atlas'},
-            {img :atlas_d6 , description:'Atlas'},
-            {img :atlas_d7 , description:'Atlas'},
-            {img :atlas_d8 , description:'Atlas'},
+        desktopShots: [
+            { img: atlas_d1, description: 'Atlas' },
+            { img: atlas_d2, description: 'Atlas' },
+            { img: atlas_d3, description: 'Atlas' },
+            { img: atlas_d4, description: 'Atlas' },
+            { img: atlas_d5, description: 'Atlas' },
+            { img: atlas_d6, description: 'Atlas' },
+            { img: atlas_d7, description: 'Atlas' },
+            { img: atlas_d8, description: 'Atlas' },
         ],
-        mobileShots:[
-            {img :atlas_m1 , description:'Atlas'},
-            {img :atlas_m2 , description:'Atlas'},
-            {img :atlas_m3 , description:'Atlas'},
-            {img :atlas_m4 , description:'Atlas'},
-            {img :atlas_m5 , description:'Atlas'},
-            {img :atlas_m6 , description:'Atlas'},
+        mobileShots: [
+            { img: atlas_m1, description: 'Atlas' },
+            { img: atlas_m2, description: 'Atlas' },
+            { img: atlas_m3, description: 'Atlas' },
+            { img: atlas_m4, description: 'Atlas' },
+            { img: atlas_m5, description: 'Atlas' },
+            { img: atlas_m6, description: 'Atlas' },
         ]
 
     },
@@ -283,7 +332,7 @@ export const projects: ProjectType[] = [
         date: '2022-2023',
         industry: 'Healthcare and Social Assistance',
         logo: sampabLogo,
-        bgLogo:true,
+        bgLogo: true,
         stack: 'Front End',
         techs: [
             { name: 'React', image: react },

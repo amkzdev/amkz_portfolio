@@ -70,7 +70,6 @@ export const DesktopSlider = ({ items, fullWidth }: { items: ProjectType['deskto
         }
     }
 
-    console.log(breakpoints(open))
 
     return (
 
