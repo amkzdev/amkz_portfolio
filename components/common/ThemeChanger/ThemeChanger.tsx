@@ -33,8 +33,8 @@ export const ThemeChanger = () => {
     return (
 
         <div className=' flex flex-row gap-1  border border-gray-200 dark:border-gray-500 rounded-3xl scale-90 lg:scale-100'>
-            <button onClick={()=>setTheme('light')} className={clsx('p-2 outline-none rounded-3xl ' ,  theme=='light' && 'bg-[#ff6b01] text-white')}><SunIcon className={clsx(' w-5 h-5' , )} /></button>
-            <button onClick={()=>setTheme('dark')} className={clsx('p-2 outline-none rounded-3xl ' ,  theme=='dark' && ' bg-white text-black')}><MoonIcon className='  w-5 h-5'/></button>
+            <button onClick={()=>setTheme('light')} className={clsx('p-2 outline-none rounded-3xl ' ,  theme=='light' && 'bg-light-primary text-white')}><SunIcon className={clsx(' w-5 h-5' , )} /></button>
+            <button onClick={()=>setTheme('dark')} className={clsx('p-2 outline-none rounded-3xl ' ,  theme=='dark' && ' bg-dark-primary text-black')}><MoonIcon className='  w-5 h-5'/></button>
         </div>
     )
 }

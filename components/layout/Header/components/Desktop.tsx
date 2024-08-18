@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect, useRef, useState } from 'react'
-import lightLogo from 'assets/logos/yellow.png'
+import darkLogo from 'assets/logos/yellow.png'
+import lightLogo from 'assets/logos/blue.png'
 import Image from 'next/image'
 import NextLink from 'next/link'
 import { PhoneIcon } from '@heroicons/react/24/solid'
@@ -34,8 +35,9 @@ export const Desktop = () => {
 
     return <div className={'flex p-2 px-4 flex-row items-center  justify-between  top-0 transition-all  duration-300 fixed w-full max-w-[1366px] bg-content-light dark:bg-content-dark z-40 border-light-primary dark:border-dark-primary border-b '} >
         <div className='flex flex-row items-center gap-2 text-light-primary dark:text-dark-primary flex-1'>
-            <div className='w-[35px] lg:w-[45px] aspect-square relative'>
-                <Image alt='Amir Mahdi Keshan Zare Logo' src={lightLogo} fill />
+            <div className='w-[30px] lg:w-[40px] aspect-square relative'>
+                <Image alt='Amir Mahdi Keshan Zare Logo' src={lightLogo} className=' dark:hidden' fill />
+                <Image alt='Amir Mahdi Keshan Zare Logo' src={darkLogo} className='hidden dark:block' fill />
             </div>
             <span className='text-lg font-semibold hidden lg:block'>Amir Mahdi Keshan Zare (AMKZ)</span>
             <span className='text-base lg:text-sm font-bold block lg:hidden'>AMKZ Portfolio</span>
@@ -44,7 +46,7 @@ export const Desktop = () => {
             {menuItems.map((item, index) => <NextLink key={item.url} href={item.url} className='text-light-primary dark:text-dark-primary hover:text-primary-blue'>{item.name}</NextLink>)}
         </div>
         <div className='flex flex-row gap-4 items-center'>
-            <ThemeChanger />
+            <div className='lg:hidden'><ThemeChanger /></div>
             <HamMenu />
         </div>
         {/* <button className='lg:hidden flex cursor-pointer'>

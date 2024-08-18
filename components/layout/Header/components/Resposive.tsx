@@ -114,7 +114,6 @@ export const Resposive = () => {
                 onClose={() => setDrawerVisiblity(false)}
                 sx={{ borderRadius: 4, overflow: 'hidden' }}
             >
-                {/* <ThemeChanger /> */}
                 <Menu closeHandler={() => setDrawerVisiblity(true)} />
             </Drawer>
         </>
