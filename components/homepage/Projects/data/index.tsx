@@ -95,7 +95,21 @@ import m2 from 'assets/images/projects/Mozaydo/m2.jpeg'
 import m3 from 'assets/images/projects/Mozaydo/m3.jpeg'
 
 import atlasLogo from 'assets/images/projects/Atlas/atlaslogo.svg'
+import atlas_d1 from 'assets/images/projects/Atlas/d (1).png'
+import atlas_d2 from 'assets/images/projects/Atlas/d (2).png'
+import atlas_d3 from 'assets/images/projects/Atlas/d (3).png'
+import atlas_d4 from 'assets/images/projects/Atlas/d (4).png'
+import atlas_d5 from 'assets/images/projects/Atlas/d (5).png'
+import atlas_d6 from 'assets/images/projects/Atlas/d (6).png'
+import atlas_d7 from 'assets/images/projects/Atlas/d (7).png'
+import atlas_d8 from 'assets/images/projects/Atlas/d (8).png'
 
+import atlas_m1 from 'assets/images/projects/Atlas/m (1).png'
+import atlas_m2 from 'assets/images/projects/Atlas/m (2).png'
+import atlas_m3 from 'assets/images/projects/Atlas/m (3).png'
+import atlas_m4 from 'assets/images/projects/Atlas/m (4).png'
+import atlas_m5 from 'assets/images/projects/Atlas/m (5).png'
+import atlas_m6 from 'assets/images/projects/Atlas/m (6).png'
 
 export const projects: ProjectType[] = [
 
@@ -123,6 +137,24 @@ export const projects: ProjectType[] = [
             'Optimize performance and loading speed of the web app for a seamless user experience',
             // 'Implement data visualization tools to display real estate data in a clear and engaging manner',
             // 'Conduct thorough testing and debugging to identify and fix any issues',
+        ],
+        desktopShots:[
+            {img :atlas_d1 , description:'Atlas'},
+            {img :atlas_d2 , description:'Atlas'},
+            {img :atlas_d3 , description:'Atlas'},
+            {img :atlas_d4 , description:'Atlas'},
+            {img :atlas_d5 , description:'Atlas'},
+            {img :atlas_d6 , description:'Atlas'},
+            {img :atlas_d7 , description:'Atlas'},
+            {img :atlas_d8 , description:'Atlas'},
+        ],
+        mobileShots:[
+            {img :atlas_m1 , description:'Atlas'},
+            {img :atlas_m2 , description:'Atlas'},
+            {img :atlas_m3 , description:'Atlas'},
+            {img :atlas_m4 , description:'Atlas'},
+            {img :atlas_m5 , description:'Atlas'},
+            {img :atlas_m6 , description:'Atlas'},
         ]
 
     },

@@ -24,7 +24,7 @@ export const DesktopSlider = ({ items, fullWidth }: { items: ProjectType['deskto
         },
         1080: {
             spaceBetween: 10,
-            slidesPerView: fullWidth ? 3.5 : 2.5
+            slidesPerView: state ? 1.5 : fullWidth ? 3.5 : 2.75
         }
 
     })
@@ -32,11 +32,45 @@ export const DesktopSlider = ({ items, fullWidth }: { items: ProjectType['deskto
 
 
     useEffect(() => {
-        if (open)
+        if (open) {
             swiper?.keyboard.enable()
-        else
+            updateBreakPoint(true)
+            console.log("Enable")
+        }
+        else {
+            console.log("Disable")
             swiper?.keyboard.disable()
-    }, [open])
+            updateBreakPoint(false)
+            //     swiper.
+            //     // swiper.({
+
+            //     //     300: {
+            //     //         spaceBetween: 10,
+            //     //         slidesPerView: 1.5
+            //     //     },
+            //     //     1080: {
+            //     //         spaceBetween: 10,
+            //     //         slidesPerView: fullWidth ? 3.5 : 2.5
+            //     //     }
+
+            //     // })
+        }
+    }, [open , swiper])
+
+    useEffect(() => {
+        updateBreakPoint(false)
+    }, [swiper])
+
+    const updateBreakPoint = (state:boolean) => {
+        if (swiper) {
+            swiper.params.breakpoints = breakpoints(state)
+            // swiper.params.slidesPerView = state ? 1.5 :2.5
+
+            swiper?.update()
+        }
+    }
+
+    console.log(breakpoints(open))
 
     return (
 
@@ -45,8 +79,8 @@ export const DesktopSlider = ({ items, fullWidth }: { items: ProjectType['deskto
             {open && <Close className='absolute left-8 top-8 text-gray-300 w-8 h-8 cursor-pointer hover:text-red-500' onClick={() => setOpen(false)} sx={{ width: 30, height: 30 }} />}
 
             <Swiper
-                slidesPerGroup={2}
-                breakpoints={breakpoints(open)}
+                // slidesPerGroup={2}
+                // breakpoints={breakpoints(open)}
                 style={{ paddingBottom: '40px' }}
                 className={clsx('rounded  dark:bg-inherit cursor-pointer w-full', open ? 'aspect-square lg:aspect-video ' : ' lg: h-full ')}
                 modules={[Pagination, Keyboard]}
@@ -54,9 +88,9 @@ export const DesktopSlider = ({ items, fullWidth }: { items: ProjectType['deskto
                 onClick={(e) => { setOpen(true) }}
                 onInit={(e) => setSwiper(e)}
             >
-                {items?.map(item => <SwiperSlide key={item.img.src} className='bg-gray-200 rounded border border-gray-200 '>
-                    <div className='w-full h-full '>
-                        <Image src={item.img} sizes='100vh' loading='lazy' fill alt={item.description} className='rounded object-scale-down lg:object-contain' />
+                {items?.map(item => <SwiperSlide key={item.img.src} className='lg: bg-gray-200 rounded lg:border border-gray-200 '>
+                    <div className='w-full h-full'>
+                        <Image src={item.img} sizes='100vh' loading='lazy' fill alt={item.description} className='rounded object-scale-down lg:object-contain ' />
                     </div>
                 </SwiperSlide>)}
             </Swiper>
