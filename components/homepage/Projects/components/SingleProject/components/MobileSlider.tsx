@@ -57,7 +57,7 @@ export const MobileSlider = ({ items , fullWidth}: { items: ProjectType['desktop
             >
                 {items?.map(item => <SwiperSlide onClick={() => setOpen(true)} key={item.img.src} className='bg-gray-100  rounded h- fit flex flex-col items-center justify-center h-3/4'>
                     <div className='w-full h-fit   '>
-                        <Image src={item.img.src} fill sizes='100vh' alt={item.description} loading='lazy' className='rounded-xl overflow-hidden object-contain  aspect-video' />
+                        <Image src={item.img.src} fill sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw' alt={item.description} loading='lazy' className='rounded-xl overflow-hidden object-contain  aspect-video' />
                     </div>
                 </SwiperSlide>)}
             </Swiper>

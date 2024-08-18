@@ -89,7 +89,7 @@ export const DesktopSlider = ({ items, fullWidth }: { items: ProjectType['deskto
             >
                 {items?.map(item => <SwiperSlide key={item.img.src} className='lg: bg-gray-200 rounded lg:border border-gray-200 '>
                     <div className='w-full h-full'>
-                        <Image src={item.img} sizes='100vh' loading='lazy' fill alt={item.description} className='rounded object-scale-down lg:object-contain ' />
+                        <Image src={item.img} sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw' loading='lazy' fill alt={item.description} className='rounded object-scale-down lg:object-contain ' />
                     </div>
                 </SwiperSlide>)}
             </Swiper>
