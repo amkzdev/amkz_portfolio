@@ -14,7 +14,7 @@ import ClickAwayListener from 'react-click-away-listener'
 
 
 const ContactInfo = ({ icon, title, link }: { icon: StaticImageData, title: string, link: string }) => {
-    return <a href={link} target='_blank' className='flex flex-row items-center gap-4 p-4 text-black justify-start hover:bg-gray-50 cursor-pointer'>
+    return <a href={link} target='_blank' className='flex flex-row items-center gap-4 p-4 text-black justify-start hover:bg-gray-50 text-base  cursor-pointer'>
         <div className='w-6 aspect-square relative' >
             <Image src={icon.src} fill alt={title} className='object-contain' />
         </div>
@@ -38,7 +38,7 @@ export const ContactMeButton = () => {
 
                 {createPortal(
                     <ClickAwayListener onClickAway={() => setOpen(false)}>
-                        <div className={`fixed whitespace-nowrap flex left-1/2 -translate-x-1/2 flex-col z-20  p-2 bg-white rounded-lg transition-all duration-300 shadow-2xl   ${open ? ' top-1/2 -translate-y-1/2' : ' top-full '}`}>
+                        <div className={`fixed whitespace-nowrap flex left-1/2 -translate-x-1/2 flex-col z-20  p-2 bg-white rounded-lg transition-all duration-300 border-2 border-light-primary dark:border-none shadow-2xl   ${open ? ' top-1/2 -translate-y-1/2 opacity-1' : ' top-full opacity-0'}`}>
                             <div className='flex flex-row items-center justify-between mb-1'>
                                 <div></div>
                                 <span className='font-bold text-sm text-black'>Contact Me</span>

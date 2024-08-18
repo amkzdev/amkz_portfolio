@@ -5,11 +5,13 @@ import whatsapp from 'assets/images/whatsapp.webp'
 import gmail from 'assets/images/gmail.png'
 import github from 'assets/images/github.svg'
 import selfie from 'assets/images/selfie/new.jpg'
+import phone from 'assets/images/socialMedias/phone.png'
 import Link from 'next/link'
 import Image from 'next/image'
 
 
-const SocialMedia = ({ link, icon, title }: { link: string, icon: typeof github, title: string }) => <Link target='_blank' href={link} className='w-6 relative aspect-square'>
+
+const SocialMedia = ({ link, icon, title }: { link: string, icon: typeof github, title: string }) => <Link target='_blank' href={link} className='w-8 lg:w-6 relative aspect-square'>
     <Image src={icon} fill alt={title} className='object-contain' />
 </Link>
 
@@ -60,11 +62,12 @@ export const Cover = () => {
                     I have an eye on design and make creative user interfaces.
                 </p>
 
-                <div className='flex flex-row items-center gap-4 justify-center lg:justify-start'>
-                    <SocialMedia icon={linkedin} link='https://www.linkedin.com/in/amkzdev/' title='amirmahdi-keshanzare-linkedin' />
+                <div className='flex flex-row items-center gap-6 justify-center lg:justify-start'>
+                    <SocialMedia icon={phone} link='tel:+989374317810' title='amirmahdi-keshanzare-github' />
                     <SocialMedia icon={telegram} link='https://www.t.me/amkzdev' title='amirmahdi-keshanzare-telegram' />
                     <SocialMedia icon={whatsapp} link='https://wa.me/+989374317810' title='amirmahdi-keshanzare-whatapp' />
                     <SocialMedia icon={gmail} link='mailto:amkz.dev@gmail' title='amirmahdi-keshanzare-gmail' />
+                    <SocialMedia icon={linkedin} link='https://www.linkedin.com/in/amkzdev/' title='amirmahdi-keshanzare-linkedin' />
                     <SocialMedia icon={github} link='https://www.github.com/amirmahdizare' title='amirmahdi-keshanzare-github' />
                     {/* <Link href={'https://www.linkedin.com/in/amkzdev/'} className='w-8 relative aspect-square'>
                         <Image src={linkedin} fill alt='amkz-linkedin' />
