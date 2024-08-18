@@ -16,6 +16,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import { WorkHistory, Task, MenuBook, Gamepad } from '@mui/icons-material';
 import Image from 'next/image';
+import { ThemeChanger } from '@/components/common/ThemeChanger/ThemeChanger';
 
 
 const Menu = ({ closeHandler }: { closeHandler: Function }) => (
@@ -93,6 +94,7 @@ export const Resposive = () => {
                     <Typography variant="h6" component="div">
                         AMKZ
                     </Typography>
+
                     <IconButton
                         size="large"
                         edge="start"
@@ -101,6 +103,8 @@ export const Resposive = () => {
                     >
                         <MenuIcon />
                     </IconButton>
+
+
                 </Toolbar>
             </AppBar>
 
@@ -110,6 +114,7 @@ export const Resposive = () => {
                 onClose={() => setDrawerVisiblity(false)}
                 sx={{ borderRadius: 4, overflow: 'hidden' }}
             >
+                {/* <ThemeChanger /> */}
                 <Menu closeHandler={() => setDrawerVisiblity(true)} />
             </Drawer>
         </>
