@@ -54,7 +54,7 @@ export const Desktop = () => {
 
         </button> */}
 
-        <div className='lg:flex flex-row gap-4 justify-end flex-1 hidden'>
+        <div className='lg:flex flex-row gap-4 justify-end lg:flex-1 '>
 
             <div className='hidden lg:flex'> <ThemeChanger /></div>
             <div className=' flex flex-row gap</div>-2 justify-end fixed lg:static  left-1/2  bottom-4 -translate-x-1/2 lg:translate-x-0  lg:left-0'>
