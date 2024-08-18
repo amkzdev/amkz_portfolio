@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react'
 
 export const ClientLayout = ({children}:{children:ReactNode}) => {
   return (
-    <ThemeProvider>
+    <ThemeProvider  defaultTheme='light'>
         {children}
     </ThemeProvider>
   )
