@@ -15,7 +15,7 @@ export const TechnicalSkills = () => {
   return (
     <div className='flex flex-col items-center gap-4 '>
         <SectionHeader title='Technical Skills' />
-        <div className='flex flex-row gap-4 justify-evenly items-center flex-wrap w-full p-4' id='skills'>
+        <div className='grid grid-cols-2 lg:grid-cols-8 gap-6 justify-evenly items-center flex-wrap w-full lg:p-4' id='skills'>
 
             <SkillItem image={react} title='React JS' />
             <SkillItem image={next} title='Next JS' />
@@ -24,7 +24,7 @@ export const TechnicalSkills = () => {
             <SkillItem image={rq} title='React Query' />
             <SkillItem image={tailwind} title='Tailwindcss' />
             <SkillItem image={mui} title='Material UI' />
-            <SkillItem image={node} title='Node JS (Intro)' />
+            <SkillItem image={node} title='Node JS' />
             {/* <SkillItem image={nestjs} title='Nest JS' /> */}
 
         </div>
