@@ -169,6 +169,7 @@ export const projects: ProjectType[] = [
         industry:"Education",
         logo:nuknukLogo,
         stack:'Front End',
+        themeColor:'#fe783f',
         techs: [
             { name: 'Next 14', image: next },
             { name: 'Typescript', image: ts },

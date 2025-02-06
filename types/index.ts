@@ -11,7 +11,8 @@ export interface ProjectType {
     mobileShots?: Array<{ img: StaticImageData, description: string }>,
     description?: string[],
     link?: string,
-    bgLogo?:boolean
+    bgLogo?:boolean,
+    themeColor?:string
 }
 
 

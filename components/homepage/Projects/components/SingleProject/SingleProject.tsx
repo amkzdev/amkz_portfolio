@@ -6,7 +6,7 @@ import { MobileSlider } from './components/MobileSlider'
 import { DesktopSlider } from './components/DesktopSlider'
 import clsx from 'clsx'
 
-export const SingleProject = ({ logo, name, date, industry, stack, techs, description, desktopShots, link, mobileShots , bgLogo }: ProjectType) => {
+export const SingleProject = ({ logo, name, date, industry, stack, themeColor, techs, description, desktopShots, link, mobileShots, bgLogo }: ProjectType) => {
     return (
         <div className='flex flex-col gap-4'>
 
@@ -15,7 +15,7 @@ export const SingleProject = ({ logo, name, date, industry, stack, techs, descri
                 <div className='flex flex-row gap-4'>
 
                     <div className='w-[90px] lg:w-[120px] p-2 aspect-square relative box-border rounded overflow-hidden'>
-                        <Image src={logo.src} fill alt={name} className={clsx('object-contain  rounded-lg ' ,bgLogo ? 'bg-blue-1 p-2 border dark:border-none dark:bg-inherit' : '')} style={{ borderRadius: '8px' }} />
+                        <Image src={logo.src} fill alt={name} className={clsx('object-contain  rounded-lg ', bgLogo ? 'bg-blue-1 p-2 border dark:border-none dark:bg-inherit' : '')} style={{ borderRadius: '8px' }} />
                     </div>
 
                     <div className='flex flex-col justify-between text-blue-2 dark:text-gray-300'>
@@ -78,11 +78,11 @@ export const SingleProject = ({ logo, name, date, industry, stack, techs, descri
                         <DesktopSlider items={desktopShots} fullWidth={!mobileShots} />
                     </div>}
 
-                    {!!mobileShots && <div className={clsx ('col-span-3 ' 
-                    , !desktopShots ? 'lg: w-full lg:h-[350px] h-[300px]' :  ' lg:col-span-1 lg:h-[200px] h-[350px]' ,
-                    
+                    {!!mobileShots && <div className={clsx('col-span-3 '
+                        , !desktopShots ? 'lg: w-full lg:h-[350px] h-[300px]' : ' lg:col-span-1 lg:h-[200px] h-[350px]',
+
                     )}>
-                        <MobileSlider items={mobileShots} fullWidth={!desktopShots}/>
+                        <MobileSlider bgColor={themeColor} items={mobileShots} fullWidth={!desktopShots} />
                     </div>}
 
                 </div>

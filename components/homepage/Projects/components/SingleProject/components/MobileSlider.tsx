@@ -11,7 +11,7 @@ import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 
-export const MobileSlider = ({ items , fullWidth}: { items: ProjectType['desktopShots'], fullWidth?:boolean }) => {
+export const MobileSlider = ({ items, fullWidth, bgColor }: { items: ProjectType['desktopShots'], fullWidth?: boolean, bgColor?: string }) => {
 
     const [open, setOpen] = useState<boolean>(false)
 
@@ -20,22 +20,25 @@ export const MobileSlider = ({ items , fullWidth}: { items: ProjectType['desktop
 
     const breakpoints = (state: boolean) => ({
         0: {
-            slidesPerView: state ? 2.25 : 2.25
+            slidesPerView: state ? 1.75 : 1.75
         },
         500: {
-            slidesPerView: state ? 3.2 : 2.75
+            slidesPerView: state ? 3.2 : 2.25
         },
         1200: {
-            slidesPerView: state ? 3.5 :  (fullWidth ? 6.5 : 4.5)
+            slidesPerView: state ? 3.5 : (fullWidth ? 6.5 : 4.5)
         }
 
     })
 
     useEffect(() => {
-        if (open)
+        if (open) {
             swiper?.keyboard.enable()
-        else
+        }
+        else {
+
             swiper?.keyboard.disable()
+        }
     }, [open])
 
     return (
@@ -45,19 +48,19 @@ export const MobileSlider = ({ items , fullWidth}: { items: ProjectType['desktop
 
             <Swiper
                 dir='ltr'
-                spaceBetween={10}
+                spaceBetween={12}
                 breakpoints={breakpoints(open)}
                 // slidesPerView={open ? 3.5 : 2.5}
                 style={{ paddingBottom: '40px' }}
-                className={clsx('rounded  dark:bg-inherit cursor-pointer w-full', open ? 'aspect-square lg:aspect-video ' : ' lg: h-full ')}
-                modules={[Pagination , Keyboard]}
+                className={clsx('rounded-lg  dark:bg-inherit cursor-pointer w-full lg:max- ', open ? 'aspect -square lg:asp ect-video h-[60vh]' : ' lg: h-full ')}
+                modules={[Pagination, Keyboard]}
                 pagination={{ enabled: true, clickable: true }}
                 onClick={(e) => { setOpen(true) }}
                 onInit={(e) => setSwiper(e)}
             >
-                {items?.map(item => <SwiperSlide onClick={() => setOpen(true)} key={item.img.src} className='bg-gray-100  rounded h- fit flex flex-col items-center justify-center h-3/4'>
+                {items?.map(item => <SwiperSlide onClick={() => setOpen(true)} key={item.img.src} style={{ borderStyle: 'solid', borderWidth: '1px', borderColor: open ? bgColor : '' }} className='bg-gray-100  rounded-lg overflow-hidden h- fit flex flex-col items-center justify-center h-3/4'>
                     <div className='w-full h-fit   '>
-                        <Image src={item.img.src} fill sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw' alt={item.description} loading='lazy' className='rounded-xl overflow-hidden object-contain  aspect-video' />
+                        <Image src={item.img.src} fill sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw' alt={item.description} loading='lazy' className='rounded-lg overflow-hidden object-contain  aspect-video' />
                     </div>
                 </SwiperSlide>)}
             </Swiper>
