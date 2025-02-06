@@ -78,7 +78,10 @@ export const SingleProject = ({ logo, name, date, industry, stack, techs, descri
                         <DesktopSlider items={desktopShots} fullWidth={!mobileShots} />
                     </div>}
 
-                    {!!mobileShots && <div className={clsx ('col-span-3  lg:h-[200px] h-[300px]'  , !desktopShots ? 'lg: w-full' :  ' lg:col-span-1')}>
+                    {!!mobileShots && <div className={clsx ('col-span-3 ' 
+                    , !desktopShots ? 'lg: w-full lg:h-[350px] h-[300px]' :  ' lg:col-span-1 lg:h-[200px] h-[350px]' ,
+                    
+                    )}>
                         <MobileSlider items={mobileShots} fullWidth={!desktopShots}/>
                     </div>}
 

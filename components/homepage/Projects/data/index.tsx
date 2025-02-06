@@ -23,6 +23,7 @@ import mui from '@assets/images/techs/mui.png'
 import reactQuery from '@assets/images/techs/reactquery.png'
 import redux from '@assets/images/techs/redux.png'
 import zustand from '@assets/images/techs/zustand.svg'
+import pwa from '@assets/images/techs/pwa.webp'
 
 
 //Sector 
@@ -139,7 +140,69 @@ import spnom_m4 from 'assets/images/projects/spnom/balance-mobile.jpg'
 import spnom_m5 from 'assets/images/projects/spnom/guide-mobile.jpg'
 
 
+import nuknukLogo from 'assets/images/projects/nuknuk/logo.svg'
+
+import nuknuk_loading from 'assets/images/projects/nuknuk/Intro.jpg'
+import nuknuk_intro from 'assets/images/projects/nuknuk/Intro2.jpg'
+import nuknuk_account from 'assets/images/projects/nuknuk/Account.jpg'
+import nuknuk_editAccount from 'assets/images/projects/nuknuk/Edit Account.jpg'
+import nuknuk_home from 'assets/images/projects/nuknuk/Home.jpg'
+import nuknuk_learn from 'assets/images/projects/nuknuk/Learn.jpg'
+import nuknuk_progress from 'assets/images/projects/nuknuk/Profilke-progrees.jpg'
+import nuknuk_setting from 'assets/images/projects/nuknuk/Setting.jpg'
+import nuknuk_transaction from 'assets/images/projects/nuknuk/Transactinon.jpg'
+import nuknuk_verify from 'assets/images/projects/nuknuk/Verify.jpg'
+import nuknuk_leader from 'assets/images/projects/nuknuk/leaderboard.jpg'
+import nuknuk_lesson from 'assets/images/projects/nuknuk/lesson-step.svg'
+import nuknuk_quiz from 'assets/images/projects/nuknuk/quiz1.jpg'
+import nuknuk_quizMic from 'assets/images/projects/nuknuk/quizMic.jpg'
+
+
+
+
 export const projects: ProjectType[] = [
+
+
+    {
+        name:"NUKNUK",
+        date:'2024',
+        industry:"Education",
+        logo:nuknukLogo,
+        stack:'Front End',
+        techs: [
+            { name: 'Next 14', image: next },
+            { name: 'Typescript', image: ts },
+            { name: 'PWA', image: pwa },
+            // { name: 'React', image: react },
+            { name: 'React Query', image: reactQuery },
+            { name: 'Zustand', image: zustand },
+            { name: 'Tailwind', image: tailwind },
+        ],
+        link:'https://nuknuk.club',
+        description:[
+            'Implemented a user-friendly interface (UI) that enhances the learning experience, allowing users to easily navigate through lessons and access quizzes.',
+            'Integrated multimedia elements such as audio, video, and images into lessons to provide an engaging and immersive learning environment.',
+            'Developed a dynamic front-end application using Next.js to facilitate English language learning, featuring interactive lessons and quizzes tailored for learners of various proficiency levels',
+            'Implemented user authentication and profile management features, allowing learners to create accounts, save progress, and revisit completed lessons.'
+        ],
+        mobileShots:[
+            {img:nuknuk_loading , description:'App Loading'},
+            {img:nuknuk_learn , description:'Learn Section'},
+            {img:nuknuk_leader, description:'Leaderboard'},
+            {img:nuknuk_home, description:'Home'},
+            {img:nuknuk_progress, description:'Progress'},
+            {img:nuknuk_lesson, description:'Lesson'},
+            {img:nuknuk_quiz, description:'Quiz'},
+            {img:nuknuk_quizMic, description:'Quiz With Microphone'},
+            {img:nuknuk_account, description:'Account Section'},
+            {img:nuknuk_intro , description:'App Intro'},
+            {img:nuknuk_setting, description:'Setting'},
+            {img:nuknuk_editAccount , description:'Edit Account'},
+            {img:nuknuk_transaction, description:'Transaction'},
+            {img:nuknuk_verify, description:'Verify'},
+        ]
+
+    },
 
 
     {
