@@ -22,6 +22,7 @@ import tailwind from '@assets/images/techs/tailwind.png'
 import mui from '@assets/images/techs/mui.png'
 import reactQuery from '@assets/images/techs/reactquery.png'
 import redux from '@assets/images/techs/redux.png'
+import zustand from '@assets/images/techs/zustand.svg'
 
 
 //Sector 
@@ -121,7 +122,65 @@ import eiffel_m5 from 'assets/images/projects/eiffel/m5.png'
 import eiffel_m6 from 'assets/images/projects/eiffel/m6.png'
 import eiffel_m7 from 'assets/images/projects/eiffel/m7.png'
 
+
+import spnomLogo from 'assets/images/projects/spnom/logo.png'
+
+import spnom_d1 from 'assets/images/projects/spnom/panel-desktop.jpg'
+import spnom_d2 from 'assets/images/projects/spnom/tours-desktop.jpg'
+import spnom_d3 from 'assets/images/projects/spnom/guid-desktop.jpg'
+import spnom_d4 from 'assets/images/projects/spnom/Select plan-desktop.jpg'
+import spnom_d5 from 'assets/images/projects/spnom/chat-desktop.jpg'
+import spnom_d6 from 'assets/images/projects/spnom/notif-desktop.jpg'
+
+import spnom_m1 from 'assets/images/projects/spnom/mobile-menu.png'
+import spnom_m2 from 'assets/images/projects/spnom/Panel-mobile.jpg'
+import spnom_m3 from 'assets/images/projects/spnom/tours.jpg'
+import spnom_m4 from 'assets/images/projects/spnom/balance-mobile.jpg'
+import spnom_m5 from 'assets/images/projects/spnom/guide-mobile.jpg'
+
+
 export const projects: ProjectType[] = [
+
+
+    {
+
+        name: "Spnom",
+        date: "2024",
+        stack: 'Front End',
+        industry: 'Real Estate Services',
+        logo: spnomLogo,
+        techs: [
+            { name: 'Next 14', image: next },
+            { name: 'React', image: react },
+            { name: 'React Query', image: reactQuery },
+            { name: 'Typescript', image: ts },
+            { name: 'Zustand', image: zustand },
+            { name: 'Tailwind', image: tailwind },
+        ],
+        description: [
+            'Developed a responsive front-end application using Next.js to create and manage immersive 3D tours, enhancing user engagement and interactivity',
+            'Collaborated with designers and backend developer to gather requirements and translate them into functional UI components, ensuring alignment with project goals.',
+            'Implemented user authentication and authorization features to secure user data and manage roles within the application',
+            'Utilized state / data management libraries (e.g., Zustand & React Query) to maintain application state and enhance performance across complex components.'
+        ],
+        link: 'https://spnom.ir',
+        desktopShots: [
+            { img: spnom_d1, description: 'Spnom' },
+            { img: spnom_d2, description: 'Spnom' },
+            { img: spnom_d3, description: 'Spnom' },
+            { img: spnom_d4, description: 'Spnom' },
+            { img: spnom_d5, description: 'Spnom' },
+            { img: spnom_d6, description: 'Spnom' },
+        ],
+        mobileShots:
+            [
+                { img: spnom_m1, description: "Spnom" },
+                { img: spnom_m5, description: "Spnom" },
+                { img: spnom_m2, description: "Spnom" },
+                { img: spnom_m3, description: "Spnom" },
+                { img: spnom_m4, description: "Spnom" },
+            ]
+    },
 
     {
         date: '2024',
@@ -158,7 +217,7 @@ export const projects: ProjectType[] = [
             { description: 'Eiffel', img: eiffel_m5 },
             { description: 'Eiffel', img: eiffel_m6 },
         ],
-        link:'https://amkztest.liara.run/'
+        link: 'https://amkztest.liara.run/'
     },
 
 
