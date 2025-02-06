@@ -22,7 +22,8 @@ export default function RootLayout({
 
           <Header />
           {children}
-          <Script
+          {/* <Script
+            async
             strategy="lazyOnload"
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
           />
@@ -36,7 +37,7 @@ export default function RootLayout({
                       page_path: window.location.pathname,
                     });
                     `}
-          </Script>
+          </Script> */}
         </body>
 
       </ClientLayout>
