@@ -222,7 +222,8 @@ export const projects: ProjectType[] = [
             'Utilized version control systems (Git) for collaborative development and code reviews, fostering a culture of continuous improvement and knowledge sharing.',
             'Worked closely with cross-functional teams, including backend developers and project managers, to define project scope and deliver features on time.',
             'Conducted thorough testing and debugging to ensure high-quality code and seamless functionality, resulting in a 20% decrease in reported issues post-launch'
-        ]
+        ],
+        link:'https://auto.flysepehr.com/'
     },
     {
 
