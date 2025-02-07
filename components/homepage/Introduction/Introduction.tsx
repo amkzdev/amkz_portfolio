@@ -21,7 +21,7 @@ export const Introduction = () => {
                 <Typography color={'grey.300'} fontSize={32} sx={{ mb: 3 }} variant='h4' gutterBottom>Front End Developer</Typography>
                 <Grid container alignItems={'center'} spacing={4}>
                     <Grid item xs={3}>
-                        <InfoItem title='YEARS OF EXPERIENCE' value={'2+'} />
+                        <InfoItem title='YEARS OF EXPERIENCE' value={'4+'} />
                     </Grid>
 
                     <Grid item xs={4}>

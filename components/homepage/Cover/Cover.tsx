@@ -47,8 +47,8 @@ export const Cover = () => {
 
 
                     <div className='flex flex-col lg:flex-row gap-2 items-stretch  rounded w-full lg:w-fit'>
-                        <TopItem icon={() => { }} text='Years Of Experience' number={3} />
-                        <TopItem icon={() => { }} text='Projects' number={10} />
+                        <TopItem icon={() => { }} text='Years Of Experience' number={4} />
+                        <TopItem icon={() => { }} text='Projects' number={12} />
                         <TopItem icon={() => { }} text='Contributes' number={'10K'} />
                         {/* <div>+3 Years Of Experience</div>
                         <div>+10 Projects</div>
