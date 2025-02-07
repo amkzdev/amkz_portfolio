@@ -24,6 +24,7 @@ import reactQuery from '@assets/images/techs/reactquery.png'
 import redux from '@assets/images/techs/redux.png'
 import zustand from '@assets/images/techs/zustand.svg'
 import pwa from '@assets/images/techs/pwa.webp'
+import ws from '@assets/images/techs/websocket.png'
 
 
 //Sector 
@@ -210,13 +211,13 @@ export const projects: ProjectType[] = [
             { name: 'Zustand', image: zustand },
             { name: 'Tailwind', image: tailwind },
         ],
-        desktopShots:[
-            {img:sp_current ,description :'Spfly'},
-            {img:sp_crewInfo ,description :'Spfly'},
-            {img:sp_jobs ,description :'Spfly'},
-            {img:sp_access ,description :'Spfly'},
+        desktopShots: [
+            { img: sp_current, description: 'Spfly' },
+            { img: sp_crewInfo, description: 'Spfly' },
+            { img: sp_jobs, description: 'Spfly' },
+            { img: sp_access, description: 'Spfly' },
         ],
-        description:[
+        description: [
             'Developed and maintained a dynamic front-end application using React.js to streamline visa automation processes for maritime travel, enhancing user experience and operational efficiency',
             'Utilized version control systems (Git) for collaborative development and code reviews, fostering a culture of continuous improvement and knowledge sharing.',
             'Worked closely with cross-functional teams, including backend developers and project managers, to define project scope and deliver features on time.',
@@ -226,7 +227,7 @@ export const projects: ProjectType[] = [
     {
 
         name: 'Nilimoon Management',
-        date: '2025',
+        date: '2024-2025',
         industry: "Online Shop Managment",
         logo: niliLogo,
         stack: 'Front End',
@@ -239,33 +240,33 @@ export const projects: ProjectType[] = [
             { name: 'Zustand', image: zustand },
             { name: 'Tailwind', image: tailwind },
         ],
-        description:[
+        description: [
             'Integrated RESTful APIs to manage product listings, blogs , categories, and order processing, improving data retrieval efficiency',
             'Developed and maintained a responsive front-end application using Next.js, enhancing user experience for an online shop management platform',
             'Utilized state management libraries (e.g., Redux or Context API) to manage application state, ensuring real-time updates and smooth user interactions.',
             'Optimized application performance through code splitting and lazy loading techniques, reducing initial load time significantly'
         ],
-        link:"https://overlord.nilimoon.co",
-        desktopShots:[
-            {img:nili_dashboard , description:"Nilimoon"},
-            {img:nili_edDesk , description:"Nilimoon"},
-            {img:nili_adDesk , description:"Nilimoon"},
-            {img:nili_orderInfo , description:"Nilimoon"},
-            {img:nili_products , description:"Nilimoon"},
-            {img:nili_addcat , description:"Nilimoon"},
-            {img:nili_editpr , description:"Nilimoon"},
-            {img:nili_catsdesk , description:"Nilimoon"},
-            {img:nili_editblog , description:"Nilimoon"},
+        link: "https://overlord.nilimoon.co",
+        desktopShots: [
+            { img: nili_dashboard, description: "Nilimoon" },
+            { img: nili_edDesk, description: "Nilimoon" },
+            { img: nili_adDesk, description: "Nilimoon" },
+            { img: nili_orderInfo, description: "Nilimoon" },
+            { img: nili_products, description: "Nilimoon" },
+            { img: nili_addcat, description: "Nilimoon" },
+            { img: nili_editpr, description: "Nilimoon" },
+            { img: nili_catsdesk, description: "Nilimoon" },
+            { img: nili_editblog, description: "Nilimoon" },
         ],
-        mobileShots:[
-            {img:nili_dashboardm  , description:'Nilimoon'},
-            {img:nili_menu  , description:'Nilimoon'},
-            {img:nili_addpr  , description:'Nilimoon'},
-            {img:nili_editprm  , description:'Nilimoon'},
-            {img:nili_orderListm  , description:'Nilimoon'},
-            {img:nili_discountm  , description:'Nilimoon'},
-            {img:nili_uploadm  , description:'Nilimoon'},
-            {img:nili_addblg  , description:'Nilimoon'},
+        mobileShots: [
+            { img: nili_dashboardm, description: 'Nilimoon' },
+            { img: nili_menu, description: 'Nilimoon' },
+            { img: nili_addpr, description: 'Nilimoon' },
+            { img: nili_editprm, description: 'Nilimoon' },
+            { img: nili_orderListm, description: 'Nilimoon' },
+            { img: nili_discountm, description: 'Nilimoon' },
+            { img: nili_uploadm, description: 'Nilimoon' },
+            { img: nili_addblg, description: 'Nilimoon' },
         ]
     },
 
@@ -486,10 +487,10 @@ export const projects: ProjectType[] = [
         stack: 'Front End',
         techs: [
             { name: 'Next 13', image: next },
+            { name: 'Websocket', image: ws },
+            { name: 'Typescript', image: ts },
             { name: 'React', image: react },
             { name: 'React Query', image: reactQuery },
-            { name: 'Typescript', image: ts },
-            { name: 'JavaScript', image: js },
             { name: 'Tailwind', image: tailwind },
         ],
         description: [
