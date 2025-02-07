@@ -159,17 +159,103 @@ import nuknuk_quizMic from 'assets/images/projects/nuknuk/quizMic.jpg'
 
 
 
+import niliLogo from 'assets/images/projects/nilimoon/logo.svg'
+
+
+import nili_dashboard from 'assets/images/projects/nilimoon/Dashboard - Desktop.jpg'
+import nili_edDesk from 'assets/images/projects/nilimoon/Edit Product-desk.jpg'
+import nili_adDesk from 'assets/images/projects/nilimoon/AddProduct-desktop.jpg'
+import nili_orderInfo from 'assets/images/projects/nilimoon/OrderInfo-Desktop.jpg'
+import nili_addcat from 'assets/images/projects/nilimoon/add-cat-desktop.jpg'
+import nili_editpr from 'assets/images/projects/nilimoon/Edit Product-desk.jpg'
+import nili_catsdesk from 'assets/images/projects/nilimoon/cats-desktop.jpg'
+import nili_editblog from 'assets/images/projects/nilimoon/edit-blog-des.jpg'
+import nili_products from 'assets/images/projects/nilimoon/products-ds.jpg'
+
+import nili_dashboardm from 'assets/images/projects/nilimoon/Dashboard-mobile.jpg'
+import nili_menu from 'assets/images/projects/nilimoon/menu-mobile.jpg'
+import nili_addpr from 'assets/images/projects/nilimoon/add-pr-mobile.jpg'
+import nili_addblg from 'assets/images/projects/nilimoon/add-blog-mobile.jpg'
+import nili_editprm from 'assets/images/projects/nilimoon/EditProduct-mobile.jpg'
+import nili_orderListm from 'assets/images/projects/nilimoon/OrderList-mobile.jpg'
+import nili_uploadm from 'assets/images/projects/nilimoon/UplaodFile-mobile.jpg'
+import nili_discountm from 'assets/images/projects/nilimoon/add-discount-mobile.jpg'
+
 
 export const projects: ProjectType[] = [
 
+    // {
+
+
+    //     name: "VisaSpfly",
+    //     date: '2025',
+    //     industry: "Travel Agency",
+    //     logo: nuknukLogo,
+    //     stack: 'Front End',
+    //     techs: [
+    //         { name: 'Typescript', image: ts },
+    //         // { name: 'PWA', image: pwa },
+    //         { name: 'React', image: react },
+    //         { name: 'React Query', image: reactQuery },
+    //         { name: 'Zustand', image: zustand },
+    //         { name: 'Tailwind', image: tailwind },
+    //     ]
+    // },
+    {
+
+        name: 'Nilimoon Management',
+        date: '2025',
+        industry: "Online Shop Managment",
+        logo: niliLogo,
+        stack: 'Front End',
+        techs: [
+            { name: 'Next 14', image: next },
+            { name: 'Typescript', image: ts },
+            // { name: 'PWA', image: pwa },
+            { name: 'React', image: react },
+            { name: 'React Query', image: reactQuery },
+            { name: 'Zustand', image: zustand },
+            { name: 'Tailwind', image: tailwind },
+        ],
+        description:[
+            'Integrated RESTful APIs to manage product listings, blogs , categories, and order processing, improving data retrieval efficiency',
+            'Developed and maintained a responsive front-end application using Next.js, enhancing user experience for an online shop management platform',
+            'Utilized state management libraries (e.g., Redux or Context API) to manage application state, ensuring real-time updates and smooth user interactions.',
+            'Optimized application performance through code splitting and lazy loading techniques, reducing initial load time significantly'
+        ],
+        link:"https://overlord.nilimoon.co",
+        desktopShots:[
+            {img:nili_dashboard , description:"Nilimoon"},
+            {img:nili_edDesk , description:"Nilimoon"},
+            {img:nili_adDesk , description:"Nilimoon"},
+            {img:nili_orderInfo , description:"Nilimoon"},
+            {img:nili_products , description:"Nilimoon"},
+            {img:nili_addcat , description:"Nilimoon"},
+            {img:nili_editpr , description:"Nilimoon"},
+            {img:nili_catsdesk , description:"Nilimoon"},
+            {img:nili_editblog , description:"Nilimoon"},
+        ],
+        mobileShots:[
+            {img:nili_dashboardm  , description:'Nilimoon'},
+            {img:nili_menu  , description:'Nilimoon'},
+            {img:nili_addpr  , description:'Nilimoon'},
+            {img:nili_editprm  , description:'Nilimoon'},
+            {img:nili_orderListm  , description:'Nilimoon'},
+            {img:nili_discountm  , description:'Nilimoon'},
+            {img:nili_uploadm  , description:'Nilimoon'},
+            {img:nili_addblg  , description:'Nilimoon'},
+        ]
+    },
+
+
 
     {
-        name:"NUKNUK",
-        date:'2024',
-        industry:"Education",
-        logo:nuknukLogo,
-        stack:'Front End',
-        themeColor:'#fe783f',
+        name: "NUKNUK",
+        date: '2024',
+        industry: "Education",
+        logo: nuknukLogo,
+        stack: 'Front End',
+        themeColor: '#fe783f',
         techs: [
             { name: 'Next 14', image: next },
             { name: 'Typescript', image: ts },
@@ -179,28 +265,28 @@ export const projects: ProjectType[] = [
             { name: 'Zustand', image: zustand },
             { name: 'Tailwind', image: tailwind },
         ],
-        link:'https://nuknuk.club',
-        description:[
+        link: 'https://nuknuk.club',
+        description: [
             'Implemented a user-friendly interface (UI) that enhances the learning experience, allowing users to easily navigate through lessons and access quizzes.',
             'Integrated multimedia elements such as audio, video, and images into lessons to provide an engaging and immersive learning environment.',
             'Developed a dynamic front-end application using Next.js to facilitate English language learning, featuring interactive lessons and quizzes tailored for learners of various proficiency levels',
             'Implemented user authentication and profile management features, allowing learners to create accounts, save progress, and revisit completed lessons.'
         ],
-        mobileShots:[
-            {img:nuknuk_loading , description:'App Loading'},
-            {img:nuknuk_learn , description:'Learn Section'},
-            {img:nuknuk_leader, description:'Leaderboard'},
-            {img:nuknuk_home, description:'Home'},
-            {img:nuknuk_progress, description:'Progress'},
-            {img:nuknuk_lesson, description:'Lesson'},
-            {img:nuknuk_quiz, description:'Quiz'},
-            {img:nuknuk_quizMic, description:'Quiz With Microphone'},
-            {img:nuknuk_account, description:'Account Section'},
-            {img:nuknuk_intro , description:'App Intro'},
-            {img:nuknuk_setting, description:'Setting'},
-            {img:nuknuk_editAccount , description:'Edit Account'},
-            {img:nuknuk_transaction, description:'Transaction'},
-            {img:nuknuk_verify, description:'Verify'},
+        mobileShots: [
+            { img: nuknuk_loading, description: 'App Loading' },
+            { img: nuknuk_learn, description: 'Learn Section' },
+            { img: nuknuk_leader, description: 'Leaderboard' },
+            { img: nuknuk_home, description: 'Home' },
+            { img: nuknuk_progress, description: 'Progress' },
+            { img: nuknuk_lesson, description: 'Lesson' },
+            { img: nuknuk_quiz, description: 'Quiz' },
+            { img: nuknuk_quizMic, description: 'Quiz With Microphone' },
+            { img: nuknuk_account, description: 'Account Section' },
+            { img: nuknuk_intro, description: 'App Intro' },
+            { img: nuknuk_setting, description: 'Setting' },
+            { img: nuknuk_editAccount, description: 'Edit Account' },
+            { img: nuknuk_transaction, description: 'Transaction' },
+            { img: nuknuk_verify, description: 'Verify' },
         ]
 
     },
