@@ -81,7 +81,7 @@ export const DesktopSlider = ({ items, fullWidth }: { items: ProjectType['deskto
                 // slidesPerGroup={2}
                 // breakpoints={breakpoints(open)}
                 style={{ paddingBottom: '40px' }}
-                className={clsx('rounded  dark:bg-inherit cursor-pointer w-full', open ? 'aspect-square lg:aspect-video ' : ' lg: h-full ')}
+                className={clsx('rounded  dark:bg-inherit cursor-pointer w-full', open ? 'aspec t-square lg:aspec t-video h-[30vh]  lg:h-[40vh]' : ' lg: h-full ')}
                 modules={[Pagination, Keyboard]}
                 pagination={{ enabled: true, clickable: true }}
                 onClick={(e) => { setOpen(true) }}
@@ -89,10 +89,12 @@ export const DesktopSlider = ({ items, fullWidth }: { items: ProjectType['deskto
             >
                 {items?.map(item => <SwiperSlide key={item.img.src} className='lg: bg-gray-200 rounded lg:border border-gray-200 '>
                     <div className='w-full h-full'>
-                        <Image src={item.img} sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw' loading='lazy' fill alt={item.description} className='rounded object-scale-down lg:object-contain ' />
+                        <Image  src={item.img} sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 60vw' loading='lazy' fill alt={item.description} className='rounded object-scale-down lg:object-contain ' />
                     </div>
                 </SwiperSlide>)}
             </Swiper>
+
+
         </div>
     );
 };

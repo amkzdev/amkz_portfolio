@@ -26,7 +26,7 @@ export const MobileSlider = ({ items, fullWidth, bgColor }: { items: ProjectType
             slidesPerView: state ? 3.2 : 2.25
         },
         1200: {
-            slidesPerView: state ? 3.5 : (fullWidth ? 6.5 : 4.5)
+            slidesPerView: (fullWidth ? 6.5 : 4.5)
         }
 
     })
@@ -60,10 +60,12 @@ export const MobileSlider = ({ items, fullWidth, bgColor }: { items: ProjectType
             >
                 {items?.map(item => <SwiperSlide onClick={() => setOpen(true)} key={item.img.src} style={{ borderStyle: 'solid', borderWidth: '1px', borderColor: open ? bgColor : '' }} className='bg-gray-100  rounded-lg overflow-hidden h- fit flex flex-col items-center justify-center h-3/4'>
                     <div className='w-full h-fit   '>
-                        <Image src={item.img.src} fill sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw' alt={item.description} loading='lazy' className='rounded-lg overflow-hidden object-contain  aspect-video' />
+                        <Image src={item.img.src} fill sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw' alt={item.description} loading='lazy' className='rounded-lg overflow-hidden object-contain  aspect-video' />
                     </div>
                 </SwiperSlide>)}
             </Swiper>
+
+            
 
         </div>
     );
