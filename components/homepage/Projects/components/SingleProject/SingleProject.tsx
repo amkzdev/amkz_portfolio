@@ -70,7 +70,7 @@ export const SingleProject = ({ logo, name, date, industry, stack, themeColor, t
 
             {(!!desktopShots || !!mobileShots) && <div className='flex flex-col w-full gap-4 '>
 
-                <span className='text-blue-2 dark:text-gray-300 '>Sample Screenshots: &nbsp;<span className='dark:text-gray-500 text-gray-400'> (Click  To View Detail)</span></span>
+                <span className='text-blue-2 dark:text-gray-300 '>Sample Screenshots: &nbsp;<span className='dark:text-gray-500 text-gray-400'> (Click On Images To View Detail)</span></span>
 
                 <div className='grid grid-cols-3 gap-4 w-full  '>
 

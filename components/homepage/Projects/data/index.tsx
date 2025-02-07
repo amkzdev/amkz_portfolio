@@ -182,25 +182,47 @@ import nili_uploadm from 'assets/images/projects/nilimoon/UplaodFile-mobile.jpg'
 import nili_discountm from 'assets/images/projects/nilimoon/add-discount-mobile.jpg'
 
 
+import sp_Logo from 'assets/images/projects/visasplfy/logo.jpg'
+
+import sp_access from 'assets/images/projects/visasplfy/Access.jpg'
+import sp_crewInfo from 'assets/images/projects/visasplfy/CrewInfo.jpg'
+import sp_current from 'assets/images/projects/visasplfy/Current.jpg'
+import sp_jobs from 'assets/images/projects/visasplfy/Jobs.jpg'
+
+
+
+
 export const projects: ProjectType[] = [
 
-    // {
+    {
 
 
-    //     name: "VisaSpfly",
-    //     date: '2025',
-    //     industry: "Travel Agency",
-    //     logo: nuknukLogo,
-    //     stack: 'Front End',
-    //     techs: [
-    //         { name: 'Typescript', image: ts },
-    //         // { name: 'PWA', image: pwa },
-    //         { name: 'React', image: react },
-    //         { name: 'React Query', image: reactQuery },
-    //         { name: 'Zustand', image: zustand },
-    //         { name: 'Tailwind', image: tailwind },
-    //     ]
-    // },
+        name: "Visa Spfly",
+        date: '2025',
+        industry: "Travel Agency",
+        logo: sp_Logo,
+        stack: 'Front End',
+        techs: [
+            { name: 'Typescript', image: ts },
+            { name: 'React', image: react },
+            { name: 'JavaScript', image: js },
+            { name: 'React Query', image: reactQuery },
+            { name: 'Zustand', image: zustand },
+            { name: 'Tailwind', image: tailwind },
+        ],
+        desktopShots:[
+            {img:sp_current ,description :'Spfly'},
+            {img:sp_crewInfo ,description :'Spfly'},
+            {img:sp_jobs ,description :'Spfly'},
+            {img:sp_access ,description :'Spfly'},
+        ],
+        description:[
+            'Developed and maintained a dynamic front-end application using React.js to streamline visa automation processes for maritime travel, enhancing user experience and operational efficiency',
+            'Utilized version control systems (Git) for collaborative development and code reviews, fostering a culture of continuous improvement and knowledge sharing.',
+            'Worked closely with cross-functional teams, including backend developers and project managers, to define project scope and deliver features on time.',
+            'Conducted thorough testing and debugging to ensure high-quality code and seamless functionality, resulting in a 20% decrease in reported issues post-launch'
+        ]
+    },
     {
 
         name: 'Nilimoon Management',
