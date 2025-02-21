@@ -35,10 +35,8 @@ export const DesktopSlider = ({ items, fullWidth }: { items: ProjectType['deskto
         if (open) {
             swiper?.keyboard.enable()
             updateBreakPoint(true)
-            console.log("Enable")
         }
         else {
-            console.log("Disable")
             swiper?.keyboard.disable()
             updateBreakPoint(false)
             //     swiper.

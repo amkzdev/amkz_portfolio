@@ -4,7 +4,6 @@ import { SectionHeader } from '@/components/common'
 import { workExperiences } from './data'
 
 export const WorkExperience = () => {
-    // console.log('Experince in Server / Client')
     return (
         <div className=' flex flex-col gap-4' id='workexperince'>
             <SectionHeader title='Work Experience' />
