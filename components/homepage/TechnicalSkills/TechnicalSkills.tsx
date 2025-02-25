@@ -13,7 +13,7 @@ import rq from '@assets/images/techs/reactquery.png'
 import ws from '@assets/images/techs/websocket.png'
 import zs from '@assets/images/techs/zustand.svg'
 
-export const TechnicalSkills = () => {
+export default function () {
   return (
     <div className='flex flex-col items-center gap-4 '>
         <SectionHeader title='Technical Skills' />

@@ -3,7 +3,7 @@ import { SectionHeader } from '@/components/common'
 import { SingleProject } from './components/SingleProject/SingleProject'
 import { projects } from './data'
 
-export const Projects = () => {
+export default function () {
     return (
         <div className='flex flex-col gap-4' >
 

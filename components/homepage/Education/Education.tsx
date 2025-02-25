@@ -3,7 +3,7 @@ import React from 'react'
 import { SingleEducation } from './SingleEducation/SingleEducation'
 import { educations } from './data'
 
-export const Education = () => {
+export default function Education ()  {
     return (
         <div className=' flex flex-col gap-4' id='education'>
             <SectionHeader title='Education' />

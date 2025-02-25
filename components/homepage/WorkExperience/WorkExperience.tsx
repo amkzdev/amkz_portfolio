@@ -3,7 +3,7 @@ import { SingleWorkExperince } from './components/SingleWorkExperince/SingleWork
 import { SectionHeader } from '@/components/common'
 import { workExperiences } from './data'
 
-export const WorkExperience = () => {
+export default function WorkExperience  ()  {
     return (
         <div className=' flex flex-col gap-4' id='workexperince'>
             <SectionHeader title='Work Experience' />
