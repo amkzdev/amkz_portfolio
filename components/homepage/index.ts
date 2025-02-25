@@ -1,7 +1,3 @@
 export { HeroSection } from './HeroSection/HeroSection'
 export { Introduction } from './Introduction/Introduction'
-export { WorkExperience } from './WorkExperience/WorkExperience'
 export { Cover } from './Cover/Cover'
-export { TechnicalSkills } from './TechnicalSkills/TechnicalSkills'
-export { Projects } from './Projects/Projects'
-export { Education } from './Education/Education'
