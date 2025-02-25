@@ -7,6 +7,7 @@ import { Keyboard, Pagination, Navigation } from 'swiper/modules';
 import clsx from 'clsx';
 import { useEffect, useRef, useState } from 'react';
 import { Close } from '@mui/icons-material';
+import { SwiperOptions } from 'swiper/types';
 // import Swiper from 'swiper';
 // Import Swiper styles
 
@@ -15,6 +16,7 @@ export const DesktopSlider = ({ items, fullWidth }: { items: ProjectType['deskto
     const [open, setOpen] = useState<boolean>(false)
 
     const [swiper, setSwiper] = useState<SwiperClass>()
+    const [openedSwiper, setOpenedSwiper] = useState<SwiperClass>()
 
     const breakpoints = (state: boolean) => ({
 
@@ -25,6 +27,22 @@ export const DesktopSlider = ({ items, fullWidth }: { items: ProjectType['deskto
         1080: {
             spaceBetween: 10,
             slidesPerView: state ? 1.5 : fullWidth ? 3.5 : 2.75
+        }
+
+    })
+
+    const openedbreakpoints = () : SwiperOptions['breakpoints'] => ({
+
+        300: {
+            spaceBetween: 10,
+            slidesPerView: 3.5,
+            // direction:'horizontal'
+            direction:'vertical'
+        },
+        1080: {
+            spaceBetween: 10,
+            slidesPerView: 1.5,
+            direction:'horizontal'
         }
 
     })
@@ -53,13 +71,13 @@ export const DesktopSlider = ({ items, fullWidth }: { items: ProjectType['deskto
 
             //     // })
         }
-    }, [open , swiper])
+    }, [open, swiper])
 
     useEffect(() => {
         updateBreakPoint(false)
     }, [swiper])
 
-    const updateBreakPoint = (state:boolean) => {
+    const updateBreakPoint = (state: boolean) => {
         if (swiper) {
             swiper.params.breakpoints = breakpoints(state)
             // swiper.params.slidesPerView = state ? 1.5 :2.5
@@ -70,29 +88,61 @@ export const DesktopSlider = ({ items, fullWidth }: { items: ProjectType['deskto
 
 
     return (
+        <>
 
-        <div className={clsx(open ? 'fixed top-0 w-full h-full z-[500] r right-0 flex flex-col justify-center items-center backdrop-brightness-50 backdrop-blur-md p-[5%]' : 'w-full h-full')}  >
+            <div className={clsx('w-full h-full')}  >
 
-            {open && <Close className='absolute left-8 top-8 text-gray-300 w-8 h-8 cursor-pointer hover:text-red-500' onClick={() => setOpen(false)} sx={{ width: 30, height: 30 }} />}
+                {open && <Close className='absolute left-8 top-8 text-gray-300 w-8 h-8 cursor-pointer hover:text-red-500' onClick={() => setOpen(false)} sx={{ width: 30, height: 30 }} />}
 
-            <Swiper
-                // slidesPerGroup={2}
-                // breakpoints={breakpoints(open)}
-                style={{ paddingBottom: '40px' }}
-                className={clsx('rounded  dark:bg-inherit cursor-pointer w-full', open ? 'aspec t-square lg:aspec t-video h-[30vh]  lg:h-[40vh]' : ' lg: h-full ')}
-                modules={[Pagination, Keyboard]}
-                pagination={{ enabled: true, clickable: true }}
-                onClick={(e) => { setOpen(true) }}
-                onInit={(e) => setSwiper(e)}
-            >
-                {items?.map(item => <SwiperSlide key={item.img.src} className='lg: bg-gray-200 rounded lg:border border-gray-200 '>
-                    <div className='w-full h-full'>
-                        <Image  src={item.img} sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 60vw' loading='lazy' fill alt={item.description} className='rounded object-scale-down lg:object-contain ' />
-                    </div>
-                </SwiperSlide>)}
-            </Swiper>
+                <Swiper
+                    // slidesPerGroup={2}
+                    // breakpoints={breakpoints(open)}
+                    style={{ paddingBottom: '40px' }}
+                    className={clsx('rounded  dark:bg-inherit cursor-pointer w-full', open ? 'aspec t-square lg:aspec t-video h-[30vh]  lg:h-[40vh]' : ' lg: h-full ')}
+                    modules={[Pagination, Keyboard]}
+                    pagination={{ enabled: true, clickable: true }}
+                    onClick={(e) => { setOpen(true) }}
+                    onInit={(e) => setSwiper(e)}
+                >
+                    {items?.map(item => <SwiperSlide key={item.img.src} className='lg: bg-gray-200 rounded lg:border border-gray-200 '>
+                        <div className='w-full h-full'>
+                            <Image src={item.img} sizes='80vw' loading='lazy' fill alt={item.description} className='rounded object-scale-down lg:object-contain ' />
+                        </div>
+                    </SwiperSlide>)}
+                </Swiper>
 
 
-        </div>
+
+
+
+
+            </div>
+
+
+            {open && <div className={clsx(open ? 'fixed top-0 w-full h-full z-[500] r right-0 flex flex-col justify-center items-center backdrop-brightness-50 backdrop-blur-md p-[5%]' : 'w-full h-full')}  >
+
+                <Close className='absolute left-4 top-4 lg:left-8 lg:top-8 bg-white rounded-full p-1  text-red-500 w-8 h-8 cursor-pointer hover:text-red-500 z-10' onClick={() => setOpen(false)} sx={{ width: 30, height: 30 }} />
+
+                <Swiper
+                    // slidesPerGroup={2}
+                    breakpoints={openedbreakpoints()}
+                    style={{ paddingBottom: '40px' }}
+                    className={clsx('rounded  dark:bg-inherit cursor-pointer w-full', 'aspec t-square lg:aspec t-video h-[80vh]  lg:h-[80vh]')}
+                    modules={[Pagination, Keyboard]}
+                    pagination={{ enabled: true, clickable: true }}
+                    slidesPerGroup={2}
+                    
+                // onClick={(e) => { setOpen(true) }}
+                onInit={(e) => setOpenedSwiper(e)}
+                >
+                    {items?.map(item => <SwiperSlide key={item.img.src} className='lg: bg-gray-200 rounded lg:border border-gray-200 '>
+                        <div className='w-full h-full'>
+                            <Image src={item.img} sizes='80vw' loading='lazy' fill alt={item.description} className='rounded object-scale-down lg:object-contain ' />
+                        </div>
+                    </SwiperSlide>)}
+                </Swiper>
+            </div>}
+
+        </>
     );
 };
