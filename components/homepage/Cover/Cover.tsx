@@ -68,7 +68,7 @@ export const Cover = () => {
                     <SocialMedia icon={whatsapp} link='https://wa.me/+989374317810' title='amirmahdi-keshanzare-whatapp' />
                     <SocialMedia icon={gmail} link='mailto:amkz.dev@gmail' title='amirmahdi-keshanzare-gmail' />
                     <SocialMedia icon={linkedin} link='https://www.linkedin.com/in/amkzdev/' title='amirmahdi-keshanzare-linkedin' />
-                    <SocialMedia icon={github} link='https://www.github.com/amirmahdizare' title='amirmahdi-keshanzare-github' />
+                    <SocialMedia icon={github} link='https://www.github.com/amkzdev' title='amirmahdi-keshanzare-github' />
                     {/* <Link href={'https://www.linkedin.com/in/amkzdev/'} className='w-8 relative aspect-square'>
                         <Image src={linkedin} fill alt='amkz-linkedin' />
                     </Link> */}
