@@ -48,7 +48,7 @@ export const Cover = () => {
 
                     <div className='flex flex-col lg:flex-row gap-2 items-stretch  rounded w-full lg:w-fit'>
                         <TopItem icon={() => { }} text='Years Of Experience' number={4} />
-                        <TopItem icon={() => { }} text='Projects' number={12} />
+                        <TopItem icon={() => { }} text='Projects' number={15} />
                         <TopItem icon={() => { }} text='Contributes' number={'10K'} />
                         {/* <div>+3 Years Of Experience</div>
                         <div>+10 Projects</div>
@@ -58,7 +58,7 @@ export const Cover = () => {
                 </div>
 
                 <p className='text-blue-1 dark:text-gray-300 text-sm leading-6 text-center lg:text-left'>
-                    Experienced Front End Developer with a demonstrated history of working in the information technology and services industry. Skilled in React, Next , Tailwindcss , Material UI , HTML, JavaScript, TypeScript, CSS, SASS, LESS, and JQuery.
+                    Experienced  Front End Developer with a  demonstrated history of working in the information technology and services industry. Skilled in React, Next , Tailwindcss , Material UI , HTML, JavaScript, TypeScript, CSS, SASS, LESS, and JQuery.
                     I have an eye on design and make creative user interfaces.
                 </p>
 
