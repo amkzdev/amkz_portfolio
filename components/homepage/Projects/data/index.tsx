@@ -190,11 +190,53 @@ import sp_crewInfo from 'assets/images/projects/visasplfy/CrewInfo.jpg'
 import sp_current from 'assets/images/projects/visasplfy/Current.jpg'
 import sp_jobs from 'assets/images/projects/visasplfy/Jobs.jpg'
 
-
+import nh_logo from 'assets/images/projects/nahalyab/logo.jpg'
+import nh_prs  from 'assets/images/projects/nahalyab/products.png'
+import nh_pr_single_fill  from 'assets/images/projects/nahalyab/product-filled.png'
+import nh_pr_single_unfill  from 'assets/images/projects/nahalyab/product-unfill.png'
+import nh_cart  from 'assets/images/projects/nahalyab/cart.png'
+import nh_orders  from 'assets/images/projects/nahalyab/order-list.png'
+import nh_single_order  from 'assets/images/projects/nahalyab/single-order.png'
+import nh_about_us  from 'assets/images/projects/nahalyab/about us.png'
+import nh_addresses from 'assets/images/projects/nahalyab/addresses.png'
 
 
 export const projects: ProjectType[] = [
 
+    {
+        name: 'Nahalyab',
+        date: '2025',
+        industry: 'Agriculture Marketplace',
+        stack: 'Front End',
+        logo: nh_logo,
+        techs: [
+            { name: 'Typescript', image: ts },
+            { name: 'React', image: react },
+            { name: 'JavaScript', image: js },
+            { name: 'React Query', image: reactQuery },
+            { name: 'Zustand', image: zustand },
+            { name: 'Tailwind', image: tailwind },
+        ],
+        link:'https://nahalyab.com',
+        description:[
+            'Designed and built reusable UI components using React, ensuring code maintainability and scalability across the application',
+            'Developed a responsive agriculture marketplace web application using Next.js, enhancing user experience through server-side rendering and static site generation',
+            'Optimized application performance by employing techniques such as code splitting, lazy loading, and image optimization, resulting in improved load times and user engagement',
+            'Implemented accessibility best practices to ensure compliance with WCAG standards, making the application usable for individuals with disabilities'
+        ],
+        desktopShots:[
+            { img: nh_prs, description: 'Products List' },
+            { img: nh_pr_single_unfill, description: 'Single Product' },
+            { img: nh_pr_single_fill, description: 'Single Product' },
+            { img: nh_orders, description: 'Orders' },
+            { img: nh_cart, description: 'Cart' },
+            { img: nh_single_order, description: 'Single Order' },
+            { img: nh_about_us, description: 'About Us Page' },
+        ],
+        themeColor:'#6c7fd8'
+
+    }
+    ,
     {
 
 
@@ -223,7 +265,7 @@ export const projects: ProjectType[] = [
             'Worked closely with cross-functional teams, including backend developers and project managers, to define project scope and deliver features on time.',
             'Conducted thorough testing and debugging to ensure high-quality code and seamless functionality, resulting in a 20% decrease in reported issues post-launch'
         ],
-        link:'https://auto.flysepehr.com/'
+        link: 'https://auto.flysepehr.com/'
     },
     {
 

@@ -41,7 +41,7 @@ export const DesktopSlider = ({ items, fullWidth }: { items: ProjectType['deskto
         },
         1080: {
             spaceBetween: 10,
-            slidesPerView: 1.5,
+            slidesPerView: 2,
             direction:'horizontal'
         }
 
