@@ -289,7 +289,7 @@ export const projects: ProjectType[] = [
             'Utilized state management libraries (e.g., Redux or Context API) to manage application state, ensuring real-time updates and smooth user interactions.',
             'Optimized application performance through code splitting and lazy loading techniques, reducing initial load time significantly'
         ],
-        link: "https://overlord.nilimoon.co",
+        link: "https://overlord.nilimoon.com",
         desktopShots: [
             { img: nili_dashboard, description: "Nilimoon" },
             { img: nili_edDesk, description: "Nilimoon" },
