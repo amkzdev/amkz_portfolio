@@ -16,7 +16,7 @@ export const workExperiences: WorkExperinceType[] = [
         description: [
             'Develop Many Projects Around The World '
             , 'Corporate With Top Companies'
-            , 'Use New Technologies To Design & Implement Enterprise Project  ']
+            , 'Use New Technologies To Design & Implement Enterprise Projects  ']
     },
     {
         date: 'Oct 2021 - Mar 2023',
